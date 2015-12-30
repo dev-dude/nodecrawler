@@ -3,6 +3,7 @@ var url = require('url');
 var cheerio = require('cheerio');
 var google = require("./google.js");
 var process = require('process');
+var fs = require('fs-extra');
 var exec = require('child_process').exec;
 var fs = require('fs');
 var wstream = fs.createWriteStream("input.txt");
@@ -16,8 +17,13 @@ var urlList = [];
 var exec = require('child_process').exec,
     child;
 
-//reset the file
-fs.truncate('train.txt', 0, function(){console.log('done')});
+// reset the file
+fs.truncate('input.txt', 0, function(){console.log('Cleared input.txt')});
+
+// empty training directory
+fs.emptyDir('/home/ubuntu/char-rnn/cv', function (err) {
+  if (!err) console.log('Successfully Emptied Cv directory!')
+})
 
 var checkNumbersInString = function(string) {
     var length = string.replace(/[^0-9]/g, "").length;
@@ -74,15 +80,13 @@ var launchTrainer = function() {
     console.log('Starting directory: ' + process.cwd());
     try {
         process.chdir('/home/ubuntu/char-rnn/');
-        console.log('New directory: ' + process.cwd());
+        console.log('Switch to New directory: ' + process.cwd());
+
+        console.log ('Starting RNN');
         child = exec('th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 2 -dropout 0.5 -gpuid -0',
-          function (error, stdout, stderr) {
-              console.log('stdout: ' + stdout);
-              console.log('stderr: ' + stderr);
-                if (error !== null) {
-                  console.log('exec error: ' + error);
-                }
-          });
+            function (error, stdout, stderr) {});
+        child.stdout.pipe(process.stdout);
+        child.stderr.pipe(process.stderr);
     }
     catch (err) {
         console.log('chdir: ' + err);
