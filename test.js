@@ -83,8 +83,11 @@ var launchTrainer = function() {
         console.log('Switch to New directory: ' + process.cwd());
 
         console.log ('Starting RNN');
-        child = exec('th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 2 -dropout 0.5 -gpuid -0',
-            function (error, stdout, stderr) {});
+        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 2 -dropout 0.5 -gpuid -0 &',
+            function (error, stdout, stderr) {
+                console.log('Finished');
+                console.log('Start sampling');
+            });
         child.stdout.pipe(process.stdout);
         child.stderr.pipe(process.stderr);
     }
