@@ -91,7 +91,7 @@ var igoogle = function (query, start, callback) {
       })
   }
 
-  var timeoutValue = Math.floor(Math.random() * 10000) + 10000;
+  var timeoutValue = Math.floor(Math.random() * 20000) + 20000;
 
   setTimeout(function(){
       doRequest();

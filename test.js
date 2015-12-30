@@ -5,7 +5,7 @@ var google = require("./google.js");
 var fs = require('fs');
 var wstream = fs.createWriteStream("train.txt");
 var self = this;
-google.resultsPerPage = 20;
+google.resultsPerPage = 50;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
@@ -29,7 +29,7 @@ var ruleSet = function(key,pS) {
      lowerCaseText.indexOf('gallery') === -1 &&
      lowerCaseText.indexOf('©') === -1 &&
      lowerCaseText.indexOf('jquery') === -1 &&
-     lowerCaseText.indexOf('var') === -1 &&
+     lowerCaseText.indexOf('var ') === -1 &&
      checkNumbersInString(lowerCaseText)) {
         return true;
     } else {
@@ -54,8 +54,8 @@ var resultFormatter = function(string) {
     });
 
     // remove special characters
-    newString = newString.replace(/[^\w\s]/gi, '');
-
+    // newString = newString.replace(/[^\w\s]/gi, '');
+    newString = newString.replace(/[^A-Za-z0-9;.,'?() ]/g, '');
 
     if (newString.length > 200) {
         newString = '    ' + newString + ' \n\n';
@@ -66,16 +66,20 @@ var resultFormatter = function(string) {
 
 
 var c = new Crawler({
-    maxConnections : 2,
+    maxConnections : 10,
+    timeout: 10000,
+    retries:1,
+    retryTimeout: 5000,
     useragent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36',
     // This will be called for each crawled page
     callback : function (error, result, $) {
         //console.log(result.options.uri);
         //console.log(error);
-        //console.log(result);
+        console.log("here");
         // $ is Cheerio by default
         //a lean implementation of core jQuery designed specifically for the server
-        if (result) {
+        if (result && $) {
+	    console.log('success');
             var pS = $('body').find('p'),
                 prevPs = '';
             pS.each(function(key,callback) {
@@ -88,8 +92,6 @@ var c = new Crawler({
                     }
                 }
             });
-        } else {
-            wstream.end();
         }
     },
     onDrain: function(){
