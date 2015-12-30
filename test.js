@@ -5,7 +5,7 @@ var google = require("./google.js");
 var fs = require('fs');
 var wstream = fs.createWriteStream("train.txt");
 var self = this;
-google.resultsPerPage = 4;
+google.resultsPerPage = 20;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
@@ -70,8 +70,8 @@ var c = new Crawler({
     useragent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36',
     // This will be called for each crawled page
     callback : function (error, result, $) {
-        console.log(result.options.uri);
-        console.log(error);
+        //console.log(result.options.uri);
+        //console.log(error);
         //console.log(result);
         // $ is Cheerio by default
         //a lean implementation of core jQuery designed specifically for the server
