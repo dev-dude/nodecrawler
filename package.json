@@ -5,6 +5,7 @@
   "dependencies": {
       "crawler": "*",
       "cheerio": "*",
-      "request": "*"
+      "request": "*",
+      "process": "*"
   }
 }

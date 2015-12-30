@@ -2,15 +2,20 @@ var Crawler = require("crawler");
 var url = require('url');
 var cheerio = require('cheerio');
 var google = require("./google.js");
+var process = require('process');
+var exec = require('child_process').exec;
 var fs = require('fs');
-var wstream = fs.createWriteStream("train.txt");
+var wstream = fs.createWriteStream("input.txt");
 var self = this;
-google.resultsPerPage = 50;
+google.resultsPerPage = 5;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
 var queueCount = 0;
 var urlList = [];
+var exec = require('child_process').exec,
+    child;
+
 //reset the file
 fs.truncate('train.txt', 0, function(){console.log('done')});
 
@@ -64,6 +69,25 @@ var resultFormatter = function(string) {
     return newString;
 };
 
+var launchTrainer = function() {
+    var child;
+    console.log('Starting directory: ' + process.cwd());
+    try {
+        process.chdir('/home/ubuntu/char-rnn/');
+        console.log('New directory: ' + process.cwd());
+    }
+    catch (err) {
+        console.log('chdir: ' + err);
+    }
+     exec('th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 2 -dropout 0.5 -gpuid -0',
+       function (error, stdout, stderr) {
+           console.log('stdout: ' + stdout);
+    	   console.log('stderr: ' + stderr);
+           if (error !== null) {
+               console.log('exec error: ' + error);
+            }
+	});
+};
 
 var c = new Crawler({
     maxConnections : 10,
@@ -96,6 +120,7 @@ var c = new Crawler({
     },
     onDrain: function(){
         wstream.end();
+        launchTrainer();
     }
 });
 
