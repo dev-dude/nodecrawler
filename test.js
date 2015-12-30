@@ -75,18 +75,22 @@ var c = new Crawler({
         //console.log(result);
         // $ is Cheerio by default
         //a lean implementation of core jQuery designed specifically for the server
-        var pS = $('body').find('p'),
-            prevPs = '';
-        pS.each(function(key,callback) {
-             
-             //console.log($(pS[key]).text());
-             // remove last sentence because sometimes copyright stuff
-             if (key < pS.length - 4) {
-                 if (ruleSet(key,pS)) {
-                    wstream.write(resultFormatter($(pS[key]).text()));
-                 }
-             }
-        });
+        if (result) {
+            var pS = $('body').find('p'),
+                prevPs = '';
+            pS.each(function(key,callback) {
+
+                //console.log($(pS[key]).text());
+                // remove last sentence because sometimes copyright stuff
+                if (key < pS.length - 4) {
+                    if (ruleSet(key,pS)) {
+                        wstream.write(resultFormatter($(pS[key]).text()));
+                    }
+                }
+            });
+        } else {
+            wstream.end();
+        }
     },
     onDrain: function(){
         wstream.end();
