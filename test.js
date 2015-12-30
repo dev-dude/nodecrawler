@@ -75,18 +75,18 @@ var launchTrainer = function() {
     try {
         process.chdir('/home/ubuntu/char-rnn/');
         console.log('New directory: ' + process.cwd());
+        child = exec('th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 2 -dropout 0.5 -gpuid -0',
+          function (error, stdout, stderr) {
+              console.log('stdout: ' + stdout);
+              console.log('stderr: ' + stderr);
+                if (error !== null) {
+                  console.log('exec error: ' + error);
+                }
+          });
     }
     catch (err) {
         console.log('chdir: ' + err);
     }
-     exec('th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 2 -dropout 0.5 -gpuid -0',
-       function (error, stdout, stderr) {
-           console.log('stdout: ' + stdout);
-    	   console.log('stderr: ' + stderr);
-           if (error !== null) {
-               console.log('exec error: ' + error);
-            }
-	});
 };
 
 var c = new Crawler({
