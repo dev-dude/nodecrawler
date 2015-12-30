@@ -3,7 +3,7 @@ var url = require('url');
 var cheerio = require('cheerio');
 var google = require("./google.js");
 var process = require('process');
-var fs = require('fs-extra');
+var fsExtra = require('fs-extra');
 var exec = require('child_process').exec;
 var fs = require('fs');
 var wstream = fs.createWriteStream("input.txt");
@@ -21,7 +21,7 @@ var exec = require('child_process').exec,
 fs.truncate('input.txt', 0, function(){console.log('Cleared input.txt')});
 
 // empty training directory
-fs.emptyDir('/home/ubuntu/char-rnn/cv', function (err) {
+fsExtra.emptyDir('/home/ubuntu/char-rnn/cv', function (err) {
   if (!err) console.log('Successfully Emptied Cv directory!')
 })
 
