@@ -5,7 +5,7 @@ var google = require("./google.js");
 var fs = require('fs');
 var wstream = fs.createWriteStream("train.txt");
 var self = this;
-google.resultsPerPage = 10;
+google.resultsPerPage = 4;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
@@ -66,12 +66,12 @@ var resultFormatter = function(string) {
 
 
 var c = new Crawler({
-    maxConnections : 1,
+    maxConnections : 2,
     useragent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36',
     // This will be called for each crawled page
     callback : function (error, result, $) {
         console.log(result.options.uri);
-        //console.log(error);
+        console.log(error);
         //console.log(result);
         // $ is Cheerio by default
         //a lean implementation of core jQuery designed specifically for the server
@@ -114,10 +114,10 @@ google(keyWord, function (err, next, links){
     nextCounter += 1;
     if (next) {
         next()
-    } else {
-        console.log('******** START CRAWL *******');
-        c.queue(urlList);
     }
-
+  } else {
+      console.log('******** START CRAWL *******');
+      console.log(urlList);
+      c.queue(urlList);
   }
 });

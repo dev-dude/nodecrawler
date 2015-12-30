@@ -1,0 +1,750 @@
+     Maybe you really truly dont care if malicious software attacks your computer or enlists it in a Distributed Denial of Service attack Ill just wipe it if I have to you say But its not just about you A recent study showed a kind of herd immunity effect In countries where a higher percentage of the population used antivirus even the unprotected ones fared better So be a good citizen and do your part If you dont want to pay for a premium antivirus utility pick one of the free antivirus products that weve rounded up for you  
+
+     Quite a few of these products are free only for noncommercial use if you want to protect your business you have to pony up for the paid edition At that point you should probably consider upgrading to a full security suite After all its your businesss security on the line And if youve grown beyond SMB status investing in a SaaS endpoint protection system will let you monitor and manage security across your entire organization  
+
+     Yes its true that Windows 8 and Windows 10 have antivirus built right in but in our tests and most independent lab tests Windows Defender hasnt done very well There have been some signs of improvement in recent tests which is encouraging  
+
+     Your antivirus should definitely have the ability to root out existing malware but its ongoing task is to prevent ransomware botnets Trojans and other types of nasty programs from getting a foothold All of the antivirus programs in this collection offer realtime protection against malware attack Some take the fight upstream working hard to ensure you never even browse to a malwarehosting site or get fooled into turning over your credentials to a phishing site  
+
+     Independent Antivirus Lab Test Results Around the world researchers at independent antivirus testing labs spend their days putting antivirus tools to the test Some of these labs regularly release public reports on their findings I follow six such labs closely AVComparatives AVTest Institute Dennis Technology Labs ICSA Labs Virus Bulletin and West Coast Labs  
+
+     Security companies typically pay for the privilege of being included in testing In return the labs supply them with detailed reports that can help improve their products The number of labs that include a particular vendor serves as a measure of significance In each case the lab considered the product important enough to test and the vendor felt the price was worthwhile The labs dont necessarily test a vendors free product but most vendors pack full protection into the free product enhancing premium versions with additional features Ive worked out a system for aggregating lab results yielding a lab score from 0 to 5 or NA if there just isnt enough data  
+
+     Since I use the same samples month after month the malwareblocking test definitely doesnt measure a products ability to detect brandnew threats In a separate test I attempt to download malware from 100 very new malicious URLs supplied by MRGEffitas typically less than a day old I note whether the antivirus blocked all access to the URL wiped out the malicious payload during download or did nothing McAfee and Symantec both paid products hold the very best scores in this test though some free antivirus utilities have done fairly well  
+
+     Useful Features Just about every antivirus product scans files on access to make sure malware cant launch and also scans the entire system on demand or on a schedule you set The one exception in the current collection is a tool aimed very specifically at detecting attempts to exploit vulnerabilities in the operating system or applications That tool Malwarebytes AntiExploit Free is designed for use in conjunction with a regular antivirus  
+
+     Blocking all access to malwarehosting URLs is a nice way to avoid trouble Many products extend that protection to also steer users away from fraudulent websites phishing sites that try to steal login credentials for financial sites and other sensitive sites A few rate links in search results flagging any dangerous or iffy ones  
+
+     Behaviorbased detection a feature of some antivirus products is a twoedged sword On the one hand it can detect malware thats never been seen before On the other hand if its not done right it can baffle the user with messages about perfectly legitimate programs  
+
+     One easy way to keep your PC protected is to install all security updates both for Windows and for browsers and other popular applications Starting with Windows 10 Windows updates arent optional for consumers but there are plenty of security holes in popular apps and addons Scanning for vulnerabilities in the form of missing updates is a feature most often found in commercial antivirus products but it does turn up in some free ones In the chart above you can see which products include these useful features  
+
+     Whats Not Here This article reports only on free antivirus products that received at least a good rating in our reviewsthree stars or better Among those that didnt make the cut is Microsoft Security Essentials  Windows Defender All of the independent labs I follow do include Microsoft in testing but most use it as a baseline If a product cant do better than the baseline its got real problems There may be hope though In the latest report from AVTest Microsoft earned a decent 14 of 18 possible points much better than its previous failing grade of 95 points And Dennis Labs awarded Microsoft AAA certification its highest rating  
+
+     There are also numerous free antivirus utilities that work solely to clean up existing malware infestations You bring out these cleanuponly tools when you have a nasty malware infestation When the problems gone they have no further use since they offer no ongoing protection Our Editors Choice in this category is Malwarebytes AntiMalware 20 and its definitely one you should try if youve got a malware problem But since theyre free you can keep trying others if the first one doesnt do the job When the scare is over youll need a fullblown antivirus for ongoing protection  
+
+     Whats Best Our current Editors Choice products for free antivirus utility are Avast Free Antivirus AVG AntiVirus Free and Panda Free Antivirus All three get very good scores from the independent labs and in our own tests as well All three include some useful bonus features Avast in particular packs a password manager and a network security scanner in its toolkit If you do have a little cash in your budget for security the best paid antivirus products do tend to offer more and better protection If not try a few of these free tools and see which one you like best  
+
+    So if you no longer want to pay for the privilege of protecting your valuable piece of hardware read on  weve picked out four of the best free antivirus engines two top Android apps and two online detection services all delivering great security at no cost 
+
+    If youre looking for a standalone antivirus package then 360 Total Security might seem a little overweight It provides antiphishing support online shopping protection network threat blocking hard drive cleanup tools a Windows update checker and more 
+
+    Still what makes the suite interesting is that it uses no less than five antivirus engines Install it and you can be protected by Bitdefender technology an excellent commercial engine Avira probably the best of the free offerings and three further engines of Qihoos own 
+
+    We found the multiengine approach can affect performance too with 360 Total Security taking anything up to twice as long to scan our system as some of the competition as well as returning more false positives 
+
+    360 Total Security is far from perfect and if youre looking for a simple antivirus engine to run alongside other security tools then itll probably be too much But if detection rates are your top priority then the package is a real contender 
+
+    While free antivirus software wont cost you anything to download you might sometimes find youll pay in other ways Install Avast Free Antivirus and itll also equip your PC with Google toolbar unless youre paying attention and clear the relevant checkbox 
+
+    Scan your system for malware and by default Avast Free Antivirus also checks for junk files unnecessary apps and other performance issues although it wont fix any of these unless you buy the companys PC Optimizer 
+
+    Fortunately you dont have to live with this Avast Free Antivirus has an excellent interface  its clean clear and configurable  and in just a few clicks you can set it up to avoid the timewasting performance scan 
+
+    Some security companies spend a great deal of time and effort on interface design but Avira isnt quite so concerned Sure Avira Free Antivirus adds a graphical launcher to your system tray but the core program looks plain ordinary and a little dated 
+
+    The program is loved by the testing labs Whether you check out AVTest AVComparatives or VB100 reports Avira technology almost always scores very highly And thats not only in relation to free software AVComparatives July 2015 RealWorld Protection Test ranked the program fourth out of 20 mostly commercial contenders with its 997 protection rate comparable with the highlyrated Bitdefender 998 and Kaspersky 997 Thats a typical score not a fluke  sometimes Avira tops the list 
+
+    If youre looking for an easy life then you can leave the program alone and itll do its work almost entirely automatically But expert users get plenty of fine control  there are options to protect the Hosts file block autorun scan archives monitor network drives set the file types to be scanned even password protect your Avira installation so others cant mess with your settings 
+
+    Avira Free Antivirus has a distinct shortage of bonus extras which might be an issue for some The Firewall options add little they configure the standard Windows firewall rather than adding anything new and even basic web protection requires a separate browser extension 
+
+    Still for us Aviras strippedback design is a plus as it makes it easier to add other security tools without conflicts Factor in its many configuration options and Avira is a smart choice for more experienced users 
+
+    Theres no doubt about its accuracy either AVComparatives monthly RealWorld Protection Test has seen Panda in the top two for months now trampling all over the commercial competition And independent testing shows it manages this while raising very few false alarms 
+
+    Bonus extras include USB Protection to keep your USB keys safe from some malware while Process Monitor is a Task Managerlike tool displaying running processes their open HTTP connections and highlighting likely dangers 
+
+    If youre feeling picky and spend long enough exploring the program you might find one or two minor issues Scanning speeds were marginally below average in our tests for instance and the program isnt as configurable as some of the competition 
+
+    Its hard to complain about a package which gives you marketleading protection at zero cost though If youre looking for something simple and reliable which you can install and just leave to do its job then Panda Free Antivirus is a great choice 
+
+    Selecting the best free Android antivirus app is difficult at the moment Its a very competitive market and the independent testing labs consistently show theres very little between the leading products 
+
+    Avira Antivirus Security earns our vote for its consistency Its a reliable engine typically amongst the toprated apps at AVTest and AV Comparatives and its 44 star rated at Google Play and Aviras excellent record with PC security software makes us think youll be able to trust the product over the long term 
+
+    There are plenty of bonus features too Antitheft tools can locate a lost phone trigger a siren or remotely lock or wipe a device and privacy ratings give you an indication of how apps are handling your data plus you also get identity protection app locking call filtering and more 
+
+    Browsing protection hourly updates and tech support are reserved for the commercial Pro version only but Avira Antivirus Security provides the core essentials you need and does a great job of keeping you safe 
+
+    360 Security  Antivirus FREE is one of the most popular antivirus apps around and the name alone gives you one reason why it really is free Okay you get ads but there are no upgrade buttons or limitations to the protection you get 
+
+    Were particularly interested in the antivirus and 360 Security  Antivirus FREE delivers there too Its an extremely accurate engine which doesnt generate too much traffic significantly drain the battery or otherwise get in the way of your regular activities 
+
+Installing a good antivirus engine will keep you safe from most threats but no product offers a 100 detection guarantee Even if a download hasnt raised an alert you might sometimes wonder if its safe    Upload a suspect file to VirusTotal and within seconds youll see the scanning results from 56 leading antivirus packages along with an indepth analysis of the file and even what it does when run on your computer the modules it needs the files it reads and writes and more 
+
+    One problem with this multiproduct approach is youll regularly see false positives where most of the engines say a file is safe but a few flag it as dangerous If only a small number of packages raise alerts maybe five or less and the most trusted engines say its safe we might run the file anyway  but that does increase your risk of infection Wait a day or two and try scanning the file again if youre concerned 
+
+    MetaScan Online uses fewer engines than VirusTotal  43 as opposed to 56  but thats not necessarily a bad thing Dropping the weaker products should mean fewer false positives and we also found reports were generated far more quickly 
+
+    MetaScan Online can also scan marginally larger files than VirusTotal 140MB compared to 128MB and has a neat Scan History page to show how a files detection rate has changed over time But balancing that it doesnt provide any behavioural information and malware doesnt normally arrive in such large files anyway 
+
+     A better interface This years version gets a row of icons at the top with intuitive images and labels which animate when you hover over them to help you see that youve selected them Clicking each icon drops down a submenu so you can browse all of them before making a move If you get lost just click the home icon thats always in the upper left to return you to the main menu  
+
+     Lots of optional settings Overall you have a fine degree of control over how Avast behaves Clicking the gear icon on the far right takes you to Avast Free Antiviruss settings window which has categories in the lefthand pane and options for each category on the right Clicking Active Protection shows you a submenu that breaks down file protection email protection and browser protection into three subcategories Each of the three has a toggle to disable the whole element which is handy when you already have other software installed that you prefer for one of those three roles Click Customize to drill down into another set of categories and options specific to that role  
+
+     Free syncing password manager Tools bundled with antimalware suites range widely in utility and quality and the free suites rarely include a password manager However the one in Avast is pretty respectable It provides extensions for Firefox and Chrome which you can use to autofill your login information at websites You create a master password that protects your list of individual site passwords and you can also sync your list across devices This requires you to create an account but its free You can also import passwords stored by your browser Avast doesnt make it clear if its list is encrypted and the password manager doesnt have many settings to customize its behavior but if you dont have a password manager this is a decent entry point  
+
+     To sync with Android and iOS devices you need a different app named Avast Passwords available for free at the Google Play store and iTunes App Store The Android version of Avasts security software doesnt bundle the manager and there is no iOS version of Avast Mobile Security You can also subscribe to a premium version of the password manager that lets you transmit your login info from your mobile device to your computer if they are on the same WiFi network by tapping a button on your screen This feature costs a modest 10 a year  
+
+     Streamlined system software updater Avast Free Antivirus can quickly scan your computer for outdated software and updating is integrated into the apps interface It creates a list of programs that need to be updated and you need only click the button next to the programs name to get the latest version Avast noticed that Java was outofdate on our device a problem that can create serious security holes Because of Avast Free Antiviruss update integration we didnt have to go to the Java website and hunt down the correct pages and links This might not be important for advanced users but it also wont get in their way because the update scan is optional and doesnt hound you to use it  
+
+     VPN service overstates its abilities When you log in to the sevenday VPN trial Avast Free Antivirus tells you Your Internet activity is now completely invisible so nobody can spy on you but that isnt necessarily true Your Internet service provider can still detect that youre connecting to a VPN and someone can monitor the VPNs exit point back onto the public Internet and keep logs of that activity And a VPN doesnt necessarily protect you when you transmit personally identifiable information while using it nor does it protect you from malware that may already be on your computer recording what you type or which websites you access  
+
+     According to AVTest and AVComparatives Avasts antivirus engine is relatively fast and accurate without bogging your system down making it one of the best free antivirus apps around And the password manager has cloud syncing across Windows iOS and Android devices a feature that the other managers would usually make you pay for But it would be better if the free and premium components were more clearly distinguished  
+
+ December 28 2015  By BigBadWolf_2009  20151228 082145  By BigBadWolf_2009     Ive been using Avast exclusively for the past 5 or 6 years and have never had a problem  it runs all the time and if you go to open a site or an attachment that isnt safe it will pop up and warn you  this is an unbelievable service for Free 
+
+    Ive been an Avast fan for years  and Ive used it on everything from XPs  to Vistas  and its on both my current WIndows 10s  I even have it on my Android tablet 
+Truly its the best product out there  before Avast I used a few of the other top free brands but they never protected me like Avast does  just set it and forget it  if you go to a bad spot it will let you know 
+I run scans a few times a week and Avast has kept me clean  it even has scans to catch browser add ons and one for security  this is a rock solid 5 Star program 
+Get it youll love it 
+
+Was this review helpful 0 0  December 27 2015  By spid old  20151227 121503  By spid old     Live protects me from malicious websites
+Has thorough virus scan
+Extra features such as password vault and rescue disk
+Scans for network threats viruses browser addons outdated software network threats and performance issues 
+
+Was this review helpful 0 0  December 27 2015  By imexotic1  20151227 081555  By imexotic1 Was this review helpful 0 0     charged my card for their product without my approval when I called to try and get a refund the woman saying that very nice hung up on me Sent an email and it took 2 weeks for them to get back to me Very poor service Will not even use for free 
+
+Was this review helpful 0 0  December 26 2015  By josenantony  20151226 072238  By josenantony Was this review helpful 0 0 Was this review helpful 0 0  December 24 2015  By baddboy1962  20151224 193425  By baddboy1962 Was this review helpful 0 0  December 24 2015  By Dimitris Papas  20151224 152512  By Dimitris Papas Was this review helpful 0 0  December 24 2015  By Steve Blauer  20151224 091248  By Steve Blauer     Updates constantly has blocked almost everything that has been thrown at it easy interface and unbelievably it is still free I was sick of Norton and its bloat Mcafee was better but at the time I experienced it not very user friendly I am disabled and money is something I dont have it is great to know that Avast has my back after so many years if my financial circumstances change you better believe I am going to send Avast money Avast has always been there for me 
+
+Was this review helpful 0 0  December 22 2015  By Alex Schwab  20151222 190606  By Alex Schwab     After buying a new computer I attempted to transfer the license over and the software wouldnt let me I purchased the package for 3 computers I called Avasts helpline and told them what was going on and they sent me another copy of my license it still didnt work After that I called them and the phone line was disconnected I emailed them again two days later and still havent received a response 
+
+    I sent a ticket after the first attempt didnt work and never got a response I waited two days and tried calling their number but IT WAS CHANGED I tried another number but it required some passcode or something that I didnt have I looked for another number but didnt have any luck So I sent another ticket I didnt receive a response for this ticket either I also told them in the second ticket that I would like a refund for the VPN service because it slowed my internet down to around 110 of its usual strength from 100Mbps down to 812 Mbps sometimes a little more but there was a very noticeable difference All Im saying is that I think Avast is going downhill with their customer service and I will not be buyingrecommending their products I also have a feeling a lot more people will have the same experience as me due to the changing of phone numbers and lack of response from multiple tickets I was cheated out of a lot of money because I now only have the Avast Free Version 
+
+Was this review helpful 0 0     For Windows PC users a good antivirus program is a necessity to ward off malware attacks keep your computer running efficiently and safeguard your online identity and personal information Premium antivirus suites have additional features to protect you from malicious Web pages help you manage security on mobile devices and monitor your computers firewall software updates and other features But some just dont want to  or cant  pay a yearly subscription fee for those extra features  
+
+    So which free PC antivirus product is right for you We reviewed Avira Free Antivirus Malwarebytes AntiMalware Free Avast Free Antivirus AVG Antivirus Free and Microsoft Windows Defender Each was tested on the same Windows 8 Acer Aspire E1 laptop which featured a Core i3 processor and 4 GB of RAM 
+
+Our malwaredetection data comes primarily from independent German evaluation lab AVTEST which regularly tests all major security software for the ability to detect zeroday malware and other threats     We also conducted our own tests on how each security suite affected a laptops performance running the PCMark7 benchmark software and our own OpenOffice productivity test to assess the systems baseline We ran the tests again while each security product did a quick malware scan and then again during full system scans and compared the results  
+
+    Ease of use is also important which is why we assessed each program on its user interface and also on how insistently it nags you to upgrade from the free version to a paid edition from the same company 
+
+     Editors choice Avira Free Antivirus Best Free Overall PC Antivirus 810 Totally worth it Review Download Now According to AVTEST Avira offers the strongest protection against both widespread and zeroday malware Its austere interface can be intimidating at first and computers with less RAM might see a performance impact However Avira Free Antivirus sheer effectiveness and good range of features  including a mobile portal and childsafety settings  make it the best choice  
+
+    According to AVTEST Avira offers the strongest protection against both widespread and zeroday malware Its austere interface can be intimidating at first and computers with less RAM might see a performance impact However Avira Free Antivirus sheer effectiveness and good range of features  including a mobile portal and childsafety settings  make it the best choice 
+
+     Malwarebytes AntiMalware Free Best Free PC Second Line of Defense 810 Totally worth it Review Download Now While technically not antivirus software itself Malwarebytes AntiMalware Free is an excellent complement to any antivirus program The software has a laserlike focus on eliminating tricky zeroday malware from your PC We especially like the Chameleon feature which disguises the software so malicious programs cant find it We recommend Malwarebytes AntiMalware Free for every PC user  
+
+    While technically not antivirus software itself Malwarebytes AntiMalware Free is an excellent complement to any antivirus program The software has a laserlike focus on eliminating tricky zeroday malware from your PC We especially like the Chameleon feature which disguises the software so malicious programs cant find it We recommend Malwarebytes AntiMalware Free for every PC user 
+
+     Avast Free Antivirus Best Free PC Antivirus User Interface 710 Very good Review Download Now We liked Avast Free Antivirus for its friendly interface good performance and unique if relatively sophisticated set of features Its a good dependable program but it just wasnt the best in this roundup either in terms of antivirus protection or extra features However you may want to consider Avast Free Antivirus if you already use other Avast products such as Avast Free Mobile Security for Android our top choice in that category  
+
+    We liked Avast Free Antivirus for its friendly interface good performance and unique if relatively sophisticated set of features Its a good dependable program but it just wasnt the best in this roundup either in terms of antivirus protection or extra features However you may want to consider Avast Free Antivirus if you already use other Avast products such as Avast Free Mobile Security for Android our top choice in that category  
+
+    The 15 best free and paid antivirus programs for your PC or laptop in the UK in 20152016 Best Antivirus reviews tests and ratings Where to buy antivirus Best Windows antivirus for PC and laptop See also best security software programs of 20152016 
+
+    If youve just downloaded Windows 10 or bought a new Windows 10 PC dont forget that it will need some help to keep it working as well as it does right now And that means installing security software Here we round up the best free antivirus and best paid antivirus for Windows 10 plus older Windows operating systems running on your PC or laptop See also best business antivirus 20152016 UK 
+
+    Antivirus software detects and then prevents disarms or removes malicious programs or malware often referred to as viruses Antivirus doesnt offer a perfect solution to the problem of malware but it is a critical first step to securing your PC or laptop To help prevent viruses infecting your PC you must install antivirus and then regularly update your antivirus software All of the antivirus software reviewed here will update automatically 
+
+    In recent years the technology that powers AV software has changed dramatically An AV package you purchased a few years ago was able to stop known viruses and other known malware but brandnew unknown viruses proved more difficult Newer products do a better job of stopping them 
+
+    For our antivirus tests we team up with AVTestorg a respected independent securitysoftware testing lab based in Germany AVTest rigorously tests AV products from a number of leading security companies The multifaceted testing procedure looks not only at how well an AV product can detect malware using traditional largely signaturebased methods that is employing a database of known malware types but also at how well it can block brandnew unknown malware AVTest also examines how well a security product can clean up after an infection in the event that a piece of malware does get through 
+
+    Our tests focus on paidfor and free AV products Paidfor AV products usually offer better technical support and more comprehensive protection features than free programs but free is free Internet security suites go further still offering firewalls parental controls identity theft protection and more 
+
+    Here we review the best antivirus programs you can buy or download in the UK right now Securing your PC is of course about a lot more than antivirus At the very least you need to run up to date antivirus antispyware and a firewall Youll find that almost all of the best antivirus software we test these days forms part of an internet security suite so all of the above and more is included 
+
+    The trouble is some antivirus is better than others They all offer a blacklist of known threats and a whitelist of software that is known to be legitimate But these days new threats emerge every day and knowing what is friend and what is foe in realtime can be critical And thats where we come in AVTest challenges Windows security software to withstand threats both old and new known and unknown 
+
+    We then combine that with our own experienced and expert tests of interface and system overhead We test antivirus programs for how much if at all they slow down your PC or laptop as well as how easy to use and how intrusive they are Thus you can see from our regularly updated list of the best antivirus for PC or laptop which is the best for you Best antivirus for protection best antivirus for performance and best antivirus for value Click through to read the individual antivirus reviews 
+
+    
+ESET NOD32 Antivirus is a sound antivirus product with some useful extras though its a bit surprising antispam isnt included in the product The software is easy to use and doesnt disrupt the normal function of a PC its running on Technically its a strong contender without being in the front rank
+ 
+
+    
+Panda Global Protection 2015 is a good option if you need to protect a range of different devices from Windows PCs to Macs and Android machines Not quite as generous as McAfees asmanyasyoulike offering and a point off the perfect score in AVTests testing the Panda product costs 20 less too and is particularly easy to use
+ 
+
+    
+GData Internet Security 2015 is relatively inexpensive for a fullfeatured security suite Its not the most successful at beating out web threats but it is sufficiently good to be worth installing A decent purchase if not the best
+ 
+
+    
+If you run a couple of home Windows PCs a Mac a tablet and a smartphone or a similar combination McAfee LiveSafe 2015 is an economical way of protecting them all and providing antitheft facilities on the mobile devices While the feature set of the IS component of the package may lack backup and PC tuneup the power of its AV protection cant be denied  
+
+    
+Avast Free Antivirus 2015 is one of the best free security products you can install It offers a surprising range of free goodies including application and browser app analysis and separately an excellent Android suite covering AV and antitheft A better than average AVTest rating completes a very impressive picture
+ 
+
+    
+Panda is one of the leading antivirus providers and this free offering includes a couple of interesting extras We were surprised at the time it took for both the initial and followup test scans but its protection levels are sound and its very easy software to set up and forget
+ 
+
+    
+If you want the extra features that Total Security 2016 offers over and above a plain free antivirus product then Qihoo isnt a bad choice And if you do install it you should head straight into the settings and enable the Bitdefender scanner  
+
+    
+BitDefender Free Edition will suit a certain kind of user one who just wants to install the software and let it do its job without recourse to setup changes or manually scans Since it has such a high protection score its safe to do this but if you prefer to have more handson control you may find this approach frustrating
+ 
+
+    
+Overall this is one of the best free AV applications youre going to find With perfect scores from AVTest a good range of facilities for a zerocost suite and a welldesigned interface which is easy to use and direct Avira Free Antivirus 2015 is a great choice to protect your PCs
+ 
+
+    
+A threedevice full protection IS suite for under 50 is good value and when that includes cover on all the major platforms it should be flexible enough for most Kaspersky Total Security 2015s technical strength cant be faulted with only Avira Anti Virus Pro matching it in the AVTest group  
+
+    
+This is one of the very best AV suites available in terms of outright protection against malware Its also very good at not throwing up false warnings but there are other products offering more auxiliary modules for the money  
+
+    Antivirus software provides an essential layer of protection from viruses trojans worms spyware adware dialers keyloggers and rootkits However dont let the name antivirus confuse you These days every good antivirus has good detection rates for all forms of malware not just viruses The term malware includes viruses trojans worms spyware adware dialers keyloggers rootkits and any other software which performs malicious activities on a computer 
+
+    Sadly the amount of malware currently in circulation is so large that no antivirus could possibly detect all of it Despite vendors claims no single antivirus solution can detect nearly all new malware There are some products out there including some in this review which include technologies which are able to adequately protect a computer but any product which relies mainly on detection is statistically doomed to fail eventually Also using more than one realtime antivirus at the same time uses much more system resources can cause system errors and can even reduce protection due to unintended conflicts For my advice on how to compensate for these weakness of antivirus products please see my other article about How to Stay Safe While Online Having a good antivirus product does go a large way towards adequately protecting your computer but in this day I would highly recommend that you add additional layers to your security arsenal 
+
+    Below I have reviewed some of the most effective Free Antivirus products currently on the market In order to make this review more unbiased although I do of course admit that my own intuition and experience does affect my judgment as well I came up with a particular methodology for comparing these products This methodology is described in the following section 
+
+    The main motivation behind why I came up with this particular methodology for this review is that I value system protection against real world threats above all other categories by which an antivirus is commonly judged It does not matter to me whether an antivirus protects the user by detecting malware blocking dangerous sites behavioral analysis sandboxing or any other approach The most important thing is that at the end of the day your system is safe from infection Thus that is the attitude I have taken towards reviewing these products My criteria is entirely based on protection not cleaning Therefore if you believe your computer may be infected please first see my article on How to Know If Your Computer Is Infected before continuing to read the rest of this article 
+
+    I have located reputable Antivirus testing organizations which claim to test products against situations which resemble realworld situations I narrowed these down by further requiring that the organizations have a relatively long record of producing good seemingly unbiased results The organizations I ended up with and therefore used for this review are 
+
+    From here I looked at all tests spanning back over the last two years However if there were more than three tests within that range I used only the most recent three Also if given the choice between results from different operating systems I chose that for the most popular operating system At the moment Windows 7 is the most popular operating system 
+
+    Also I only considered results if it was specifically the Free Version which was tested This is because the results for the Paid Version of the products in this review with the exception of Comodo Antivirus which has the exact same protection for its Free and Paid versions are often quite different from those for the Free versions Many marketing teams try to cloud this difference but for the purposes of getting the most reliable information I am strict about this Unless it can be explicitly proven that every protection mechanism is exactly identical to the free version the results for paid products are not considered in this analysis 
+
+    In addition I did not count it against any of the products if they were not tested by multiple organizations As long as they were tested by at least one within the abovementioned period they were considered This criteria was chosen because there are many reasons to choose not to participate in a test Thus it should not be held against the product if they were not tested by multiple agencies However if they were not tested by any this makes it impossible to compare them in an unbiased fashion 
+
+    Once this data was collected I then looked at the overall results for the Free Antivirus products discussed in this review and ordered them mainly according to the quantitative results However my own knowledge of the products and the reviews and experiences of others were also considered The results are presented and discussed below 
+
+    Comodo Antivirus is my top pick for advanced users or for Intermediate users who are okay with an antivirus software which will occasionally ask them for input However if you do not fall into those categories or for any other reason find it to not be a good fit for you then you will likely find my next pick suitable Also for those who prefer a complete solution there is always Comodo Internet Security CIS which is also free and includes a firewall in addition to all other components which already come with Comodo Antivirus 
+
+    Firstly I will note that I am a volunteer moderator not employee on the Comodo forums However this is certainly not the reason I chose this for the number one position The reason I made this my top pick for advanced users or users who are okay with a somewhat talkative antivirus software is because it is the only product which I feel confident saying that it will protect you against nearly 100 of realworld threats This is because it maintains a whitelist of known safe applications Then all unknown applications which include all unrecognized malware will be sandboxed and isolated from the rest of the system Thus this product provides very strong protection against even zeroday malware 
+
+    Comodo Antivirus also uses the cloud to facilitate the detection of the most recent malware as do many other Free Antiviruses reviewed in this article It will also analyze unknown applications for suspicious behavior and alert the user accordingly However as mentioned previously users who do not want a somewhat talkative antivirus should continue to my next pick Also by default Comodo Antivirus has small advertisements which can be disabled as shown here Also please see my notes in the Quick Selection guide for advice on how to avoid unwanted software during installation 
+
+    Panda Cloud Antivirus is an excellent choice for average users who may find Comodo Antivirus too confusing It has a simple interface completely automated features access to cloudbased protection and has been shown to be very good at protecting a computer Panda Cloud Antivirus has a behavioral blocker web protection and access to cloudbased protection all of which will help increase your security The protection offered by this product is very strong However do note that it will autoquarantine files which it believes to be dangerous 
+
+    Avast Free Antivirus has very good protection rates Avast has many different protection shields boottime scanning a behavioral blocker an internet site ratings plugin script malware protection and access to cloudbased protection Its arguable whether their ratings plugin offers comparable levels to Web of Trust but the script malware protection can prevent certain browser exploits a feature not available in any of the other free AVs reviewed 
+
+    However do note that Avast requires a free registration to function after 30 days and the default installation installs the Chrome browser unless you uncheck it Also note that the OpenCandy advertising component is integrated into the Software Updater tool in Avast More information about OpenCandy can be read here Thus if a user selects this option during the install they will end up with OpenCandy on their computer My advice would be that if you want to install Avast you should not use the Software Updater tool 
+
+    AVG AntiVirus Free Edition is also a good choice for average users My analysis of the results as discussed in the methodology section does show that it does a decent job of protecting your computer However it appears that the above Antivirus products tend to do better Also it comes with advertisements but they can be disabled 
+
+    Avira AntiVir Personal Edition is another product which has a very good reputation However the free version was not tested by any of the three testing organizations I referenced in my methodology Therefore I cannot currently recommend it above any of the previously mentioned products 
+
+    However other comparative tests do show that it has very high detection rates for malware Also many users have used it and found that it is very effective Also Avira provides access to cloudbased protection AntiVir is certainly a good choice for a free antivirus but due to the lack of realworld testing at this time I cannot recommend it above the other products in this review Hopefully in the future they will have the free version tested by these organizations as well 
+
+    Bitdefender Antivirus Free Edition is another free antivirus product which has a very good reputation However the free version was not tested by any of the three testing organizations I referenced in my methodology Therefore I cannot recommend it above any of the previously mentioned products 
+
+    The engine for this product appears to be very similar the commercial product although there are some tweaks However the level of protection provided has not been shown conclusively to be identical with the paid version which is why I did not use the results for the paid version in my analysis Bitdefender Free has both local and cloudbased definitions Thus users always have access to the most uptodate definitions It also has an effective heuristics engine and uses a component called the Active Virus Control to monitor applications in realtime for suspicious behaviors In addition it also has a webshield which seems quite effective at protecting users from both malware infested and phishing sites 
+
+    The user interface for this product is very minimalist Thus it may be attractive for novice users although more advanced users may be frustrated at the lack of customization However it has no offline installer and it also requires registration to continue using it past 30 days Bitdefender Antivirus Free Edition is a good choice for a free antivirus but due to the lack of realworld testing at this time I cannot recommend it above the other products in this review Hopefully in the future they will have the free version tested by these organizations as well Also note that if you are having trouble getting Bitdefender Antivirus Free Edition to install in English please follow the steps in this post 
+
+    EndNote Please note that I also looked into Forticlient  Kingsoft and Microsoft Security Essentials However I found that the protection offered by these products is subpar Thus if you are considering using Forticlient or Kingsoft I would strongly recommend that you instead consider another of the products reviewed in this article 
+
+    Please visit our freeware forum to share and discuss your views and get advice on free security software including antivirus software To post in the forum you need to register first but thats quick and immediate 
+
+    free antivirus best free antivirus free antivirus programs free antivirus program antivirus software free antivirus software antivirus program free antivirus programs antivirus scanner best antiviros best antvirus 
+
+    Regarding Panda could someone clarify what this means  it will autoquarantine files which it believes to be dangerous
+When it does that to a file that I do not want quarantined 
+ do I get a heads up
+ and is it easy to undo the quarantine 
+I am leaning heavily towards installing it in my main PC depending on the answer to those questions 
+
+    I had used Avast for years but it was getting a bit wearing
+I tried another one a few months back Cant recall the name but it is well known and gives us 1 year free
+None of my PCs are newish and are a mixture XP and W7
+I find networking somewhat painful mainly with W7 being too nanny
+When I installed that what was its name antivirus my networking got much worse
+After I uninstalled that whats its name my networking returned to its slight PIA state 
+
+    I am currently running with no antivirus 3 weeks whilst deciding what to go with
+I can reasonably get way with this by being careful in emails I always am and using FF with NoScript
+All those minimalistic Chrome lovers out there that do not use FF  Noscript are unwise I tempered that a lot 
+
+    Although I do not think only Panda does that restoring automatically quarantined files is as easy as clicking on the main inteface button on the top the whole interface looks like the new Windows start Interface with the squares and then clicking on the Quarantines View Details button There you will see all the quarantined items and you will be able to restore them If the folder the files were does not exist anymore it will move them to a Lost and found folder If it can find the folder restoring them will also tell Panda the files are harmless so it will not redetect them ever as malware  
+
+    I consider Panda one of the two best lightweight Antiviruses and suggest it to people that want an antivirus with options For friends and users that just want an antivirus that will kill anything and they will never care to change settings I suggest Bitdefender It will brutally quarantine anything that it believes it is harmful be it you like it or not 
+
+    Hi am the new editor here This article is pending a major update for the New Year so its not been updated yet Chiron our previous editor left so Ive big shoes to fill in Unlike our previous editor my results wont be considering the accolades that antiviruses have been getting at independent lab tests because the authenticity of these tests cannot be confirmed as they dont show you proof So Ill be doing my own malware tests on a virtual machine to consider the overall effectiveness of antivirus software  
+
+    That being said its finally the users choice to choose what kind of protection that they need because no matter what antiivrus software you use its a safe bet that you will be protected unless you are deliberately calling for trouble  
+
+    I just hope we are not going down the YouTube track of chucking a bunch of URLs at something knowing that in a few minutes they will have disappeared and then ranking product protection qualities based on their detection  
+
+Its also worth mentioning that a stack of malware can recognize when it is being launched in a virtual environment
+MC  Site Manager    Trust online is something harder to get than it is in real life for sure I am not paranoid myself when it comes to tests but I never cared enough if one antivirus has 10 and the other 5 labs points There are plenty sources that show more detailed tests which feel more trustworthy since there are details Indeed though knowing what the test tool does is something that would help us not so much understand but see results as even more trustworthy 
+
+    For better or worse some malware do not hide only in virtual environments but also are able to hide in the system and stay inactive waiting for a chance when for whatever reason the antivirus will not be active and sneak up on the user  
+
+    All antivirus tools have some misses and quite some of them have a good killing ability I am not sure if Avira is still one of the best but that one and Bitdefender seem to prefer to hit more false positives so they they will miss less viruses rather than being more lax and miss more viruses  
+
+    With that said though Antiviruses are not anymore the perfect shield Users should definitely use a browser addon to add a first wall of protection be it like me an adblocker or any other addon that can block malware and afar from that use occasionally an antimalware solution 
+
+    Although this is not the Best Free Spyware And Adware Remover list I wonder why in the current one tools like RKill TDSSKiller AdwCleaner and Junkware Removal Tool are not mentioned at least in a products that are worth mentioning list 
+
+    But this is mostly not necessary for home users because basic protection provided by freeware antivirus is well and good for them Add together a couple of other free security products you are rocksolid Others who doesnt offer a paid for service has other sources of revenue  
+
+    I have been repairing computer systems since 1989 and if there is one thing I have observed the antivirus tests run in labs are significantly different than what happens to users computers Basing a choice of antivirus upon the results of lab tests shows the media wants to avoid assuming any liability  they blame it on someone else What good is advice where no liability was assumed There are some informed comments here and I appreciate those who offer such responses It is obvious because they are not concerned about themselves they express concerns for all of us KUDOS to them 
+
+    Ive been using Bitdefender Free for about 6 months now and while Im an advanced cautious user Ive had no issues with it It took a while to get used to just leaving it alone as in the past Id go in and tweak all the settings of my commercial antivirus
+As the author wrote theres no conclusive evidence that the Bitdefender Free engine is the same as the paid but its pretty likely One area that the free is much better than the paid is in usage of system resources This is likely due to all the supplemental features the paid versions have At idle the Free version uses about 25 MB of memory as opposed to close to 250 MB for the paid Bitdefender AV Plus 2015 Consequently the paid Bitdefender uses as much memory as McAfee But I digress
+My point is the free Bitdefender is a great product for either A a total set it and forget it user like an elderly relative or B a power user who has trust in the product and whod be able to tell if something were not right on their system 
+
+    Heres the simple layered security setup I use on my Dell every day laptop
+1 Bitdefender Free AV  set  forget
+2 Windows Firewall  set  f9rget
+3 Mcafee Web Advisor aka Site Advisor  for supplemental URL blocking and search engine result ratings Mcafee has the best product in this category IMO by far  far better than Bitdefender Traffic Light 
+4 Malwarebytes Free  manual scan every 23 weeks 
+
+    Win FW  Go to Advanced Settings  Top left side click Outbound Rules  Top right side click New Rule  Check that Program is selected  Click next  Check that This program path is selected  paste CProgram FilesAVAST SoftwareAvastAvastUIexe without quotes  Click next  Check Block the connection is selected  Click next  Check all the 3 options are selected  Click next  Paste AvastUI without quotes in the option Name  Click finish 
+
+    UPDATE 
+It seems blocking of AvastUIexe as mentioned above takes care of all the Avast craps ie no adspopups no upgrade button on the main GUI no ads on the main GUI no ChromeToolbar offers options during installupgrade etc 
+
+    I uninstalled Avast Free But didnt remove the block rule for AvastUIexe from Win FW
+I had a previous installer so installed Avast Free No ChromeToolbar offers options during install I then upgraded to the latest version  no ChromeToolbar offers options during upgrade 
+
+    of course the internet is now abuzz with the announcement from avg that it now collects and sells your info so another product that i am done with added to these
+Samsung spyware on tvs plus pups on phones
+Lg spyware
+Lenovo spyware and not safe chinese computers
+Comodo adware
+SOHO Routers
+Seagate harddrivescome with rootkits 
+
+    I do wish when posters tout something on here  as in this recent post about Moon Secure AV  theyd do more than tout but instead amplify their contribution in this instance with some reference to calibre of performance and provenance of producer Last I heard Moon Secure was an Indian enterprise which used ClamAV and then ceased business Thats about as staggeringly unimpressive as it gets  so why is this particular AV being promoted in this comments thread Looks like spam to me 
+
+    Not sure about listing MSE Microsoft Security Essentials as unsuitable or subpar
+It is true that they rank low on the test scores
+But theres an assertion that MSE focuses on the most popular exploits
+So we might have a realworld vs academic controversy here
+Ie in an academic settings AV tests with contrived threats ie including some rare ones MSE doesnt perform well
+But in the realworld with threats that are commonly seen it performs just as well as the others
+Ie you have no greater chance of becoming infected with MSE than with any other AV
+MSE is also free and fast so I would not demote it 
+
+    My personal opinion is if you take the AV Tests and give them a good shake ie replace the threats tested with an different but equivalent set then everybodys going to score differently
+So my opinion pick a fast unobtrusive one Thats MSE or BitDefender today but every year brings a new mix
+Actually before coming here today i would have put Panda on that list but people here report popups
+And supplement with Malware Bytes antimalware and Super Anti Spyware once a week
+And use Sandboxie or VMware player or VirtualBox for risky stuff 
+
+    Then uninstall it and use something else It is a free program I see nothing wrong with providers of free stuff trying to get you to upgrade to something that gives them some compensation for teir work If they do it in a way that is inttrusive to you then just move on Maybe buy a pay program  no ads well usually 
+
+    I am puzzled by your comment about bloatwareopencandy with Avast I have installed it on three laptops and theres no trace of Opencandy on any of them I have found it very easy to avoid installing Chrome if I dont want it
+I find an increasing number of nag screens in Avast and it does try to get you to upgrade  always at an alleged discount does anyone ever pay the so called full price
+But the free version has been very effective in blocking all sorts of invasions so Im relucatant to abandon it for the reasons you give 
+
+    Yeah me three Been using Avast for years on a number of computers and nothing extra has ever been installed by itself The popups are slightly annoying but are occasional and no real biggie The only thing you have to watch out for besides the Chrome install option and even that didnt show when I installed it yesterday via ninitecom is that during upgrades its easy to click install for the paid version 
+
+    Avast is one of the three main contenders in the free antivirus world AVG and Avira being the other two As with those two there are paidfor products in Avasts range with more features but the free version has several useful features of its own See also Best internet security software 2015 UK 
+
+    Avast makes quite a thing about its free antivirus offering giving a good breakdown of its feature set and companion programs online as well as naturally offering a range of upgrades to commercial products It offers two main functions antivirus protection and potentially unwanted application PUA detection for when bad apps piggyback themselves on legitimate downloads 
+
+    Theres also a network scanner which looks at your network settings and passwords and suggests improvements to increase their strength The free package doesnt include antispam or a firewall and youll need to upgrade for password protection too 
+
+    Free protection can be extended though by adding Avast Browser Safety also a free download which prevents ad networks from tracking your movements online blocks harmful web sites and offers slightly unexpectedly a price comparison when shopping There are free Avast AV apps for Mac Android and iOS too so you could protect all your devices with pretty much the same software 
+
+    The main control screen is very clearly laid out and makes wide use of tiles demarcating all the important information Theres more info than you often get in free AV products too with a good statistics module covering both the work the software has done on the local computer and what it has achieved for its customers globally 
+
+    Avast took over 1 hour 10 minutes to scan our 50GB basket of test files but it did look at 879891 of them giving a scan rate of 204 filess well up with some of the fastest scanners However theres very little difference in scan time on a second pass just a minute less so not much file fingerprinting going on 
+
+    The Protection rating from AVTest was 5560 which seems a little harsh when in the two months of the test it scored a perfect 100 percent on both zero day and widespread malware detection in the first month and dropped just 1 percent still above the industry average on the zero day testing in the second month 
+
+    The Usability category produced a perfect 6060 with only one false detection in the whole set of samples where the industry average was three This gives the product an overall score of 160180 a very respectable result for a free product though not the best in this group 
+
+    Avast Free Antivirus 2015 is one of the best free security products you can install It offers a surprising range of free goodies including application and browser app analysis and separately an excellent Android suite covering AV and antitheft A better than average AVTest rating completes a very impressive picture 
+
+    Comodo Internet Security is a multilayered security application that keeps hackers out and personal information in Built from the ground up with your security in mind Internet Security offers 360 Virus Protection by combining powerful Antivirus protection an enterprise class packet filtering firewall advanced host intrusion prevention and automatic sandboxing of unknown files 
+
+    It is said that for the good you have a lot of pay It is also said that only paid security programs are able to provide adequate quality of protection Can we expect something more from free software Comodo Internet Security Premium The free version of Comodo is a fully professional version of the security system All the ingredients are high My overall rating 810 I would recommend  
+
+    As recently as a year or two ago it was easy to pick a free antivirus package Almost any of a half dozen free virus scanners did an acceptable job and largely stayed out of the way of the OS when configured properly Times change however 
+
+    A combination of increased malware and virus activity along with lax updates and regression on free antivirus suites has narrowed the field down to a handful of worthy packages Older chart toppers like AVG have fallen hard and fast while outsidethePC solutions such as routerbased antivirus scanning some routers offer fullservice antivirus solutions built right into the firmware blocking threats before they ever touch your PC have become new preliminary lines of defense Its a whole new world out there with more threats and vectors of attack but fewer worthwhile defenders 
+
+    When it comes to the charts no free antivirus software comes close to Avira Number one in realworld performance and ahead of the other free packages in almost every independent antivirus research ranking Avira holds a commanding laboratory lead over the other free packages  
+
+    Avira is also impressive when it comes to features A healthy suite of antivirus tools is provided with link scanning malware and rootkit protection present and accounted for although Avira isnt alone in this generosity AVG offers even more at the same gooseegg price tag 
+
+    While plenty quick in Win 8 and 81 Avira struggles to keep up on Windows 7 systems which remain popular especially for gaming Another more serious problem is the lack of behavioral virus blocking Avira may have excellent threat definition files that get updated with the best in the industry but if the virus isnt on file youre pretty much out of luck 
+
+    Avira also has a spotty record with adware phishing and malware Independent testing shows hitandmiss results producing scores that barely beat Microsofts builtin Security Essentials protection AKA the antivirus worlds counterpart to Notepad 
+
+Aviras malware protection has improved somewhat in recent versions but theres a better way to deal with low and midlevel threats to your PC than allinone antivirus packages More on that in a bit    Despite these quibbles and the occasional nag screen Avira narrowly takes the top slot of the three free antivirus programs looked at here assuming the user faces normal to moderate threat levels Only a few competitors come close paid or otherwise to its mix of protection and performance Nevertheless if Avira doesnt appeal or you need better 0day protection than static definitions provide dont pull out your credit card yet there are other free options 
+
+    Lightfooted Avast shadows Avira in protection scores and generally outpaces it with swift performance in the real world giving it the highest performance of the three packages here although subjective experiences in the lab didnt always bear out these results 
+
+    More singleminded than other antivirus software Avast sticks to the basics and that pays off handsomely in independent performance and protection tests It also means Avast is a better system citizen readily partnering with other security software and sharing duties without creating conflicts between similar services 
+
+    Avast also has a problem with false alarms issuing far more than either AVG or Avira which not only gets old fast but also teaches users to ignore warnings which isnt a smart route for security software to take 
+
+    While theres no custom firewall or other exclusive highend features the package does provide link protection browser cleanup and a handy network vulnerability scanner along with a few other basic tools alongside the primary antivirus component For highrisk users the scanning engine supports behaviorbased virus activity detection and can stop unknown exploits before they are coded into definition updates 
+
+Avasts combination of speed and features isnt enough to unseat Avira for general use but Avast tends to perform better in mid to highthreat situations especially when paired with good malware software    Once a top contender AVG has fallen to the bottom of pick list but remain a viable recommendation While AVG has always lagged a little behind in the others in outright protection and performance it more than compensated by providing an excellent overall set of features and the slickest user experience of the bunch There are matters other than software to consider however 
+
+    While others in the antivirus marketplace spent the last few years adding features upping performance and polishing user interfaces the folks at AVG Technologies followed another route Theyve been busy pioneering an array of annoying popups that try to install security browser addons urge you to upgrade to paid versions or resort to other strongarm tactics that annoy as much as malware itself 
+
+    The latest chapter has the company collecting cleansed customer data for possible sale to advertisers a decision they have decided to stick with over protestations from the userbase privacy advocates and security experts 
+
+    Some of the annoying notifications can be turned off till the next update via buried options in the settings menus and AVG features the best free Windows 7 antivirus protection around and behavioral antivirus protection is included a testament to legacy code and better days 
+
+    In a way the supporting players in the antivirus game are better than the allstars who soak up the credit and headlines You may have noticed the Panda package scored well in tests but wasnt included in the above recommendations Theres a reason for that 
+
+    Pandas offering is an internetbased free antivirus service called Panda Cloud that makes an ideal second line defense that doesnt take on primary antivirus duties but can step in at a moments notice when youd like another opinion on a suspicious file 
+
+    Its also a good fit for systems you need to trust temporarily Consider Panda the ankleholster antivirus option just remember not to have two background scanners or active virus blockers working simultaneously or they can interfere with each other 
+
+    Many adware exploits slip by antivirus programs and while these arent usually as malicious as outright viruses they can still slow down a computer annoy and prove difficult or costly to remove Rather than rely on omnibus antivirus packages alone to stop these specialized tools such as Malwarebytes or Spybot are better bets for adware removal and detection 
+
+    Scanning with Malwarebytes after a standard virus scan frequently reveals all sorts of adware infractions and generally removes them painlessly These misdemeanorlevel alerts are frequently overlooked by larger packages which spent most of their time and detection research stopping more serious threats Like Panda this suite should be on standby next your primary antivirus package 
+
+    One of the best ways to keep your system virus free is simply to run Windows Update regularly Microsoft historically applies patches to Windows on the second Tuesday of every month a tradition called Patch Tuesday If youre worried about one of the many Microsoft muckups regarding patches just wait an extra week or so before applying them Problem reports are usually in by then so you can skip any troublesome updates until the software is sorted out 
+
+    Another way to keep your system secure is via hosts file editing The hosts file is used by your computer to map IP addresses to names and can be edited to map the addresses of known trouble or advertising sites back to the internal loopback address of 127001 meaning they wont connect to your system 
+
+    You can find an excellent regularly updated free hosts file block list here and can implement it with a simple text editor giving you regularly updated malicious URL blocking for free sans dodgy security toolbar search addons Its also a pretty painless way to block ads If you find a blocked site you need access to just delete it from the loopback list 
+
+    Last but not least dont forget to keep a tool like CCleaner handy to erase caches histories passwords banking data and other leftover information if security is of special concern A compromised system cant send secrets it doesnt have An occasional system sweep duplicates some of the functionality found in paid options of antivirus software Theres even a secureerase function 
+
+    While each of these antivirus suites sports a specialty theyre all thoroughbreds With most results only a few percentage points apart its more a matter of matching your needs and workflow than winnowing out weaklings 
+
+    For protection and the comfort of the best overall numbers Avira is the perfect pick If speed simplicity and zeroday protection are top concerns Avast is sure to please If its features you want AVG has them all along with a few annoyances that give pause but arent worth dropping it from consideration 
+
+    Dont forget however that the key to system security is not to rely on any single antivirus package by itself but as part of an array of defenses with antispyware routerbased protections and AV cloud services all employed alongside one another to provide multiple independent barriers against security threats While no system is truly impervious this is as close as youre likely to get especially for the price 
+
+    It doesnt take a genius to tell that the threat of viruses and malware has been growing exponentially with time Their shadow looms over the entire internet Threatening to engulf your personal information and use it for maligned intentions or simple disclosure to the public Newer and newer viruses keep popping up everyday thereby making it essential to guard our system from the constant threat posed by them 
+
+    Lavasofts AdAware has been a pretty reliable spyware tool It offers smooth installation nonintrusive notifications along with detailed custom scanning The UI of the latest version has been vastly improved as compared to the previous version Several features have been incorporated such as Sandbox emulation scheduler and a command line scanner That being said there is a lot of scope for development of the rootkit detection and phishing protection provided by the Antivirus 
+
+    FortiClient is an effective and efficient Free Antivirus which boasts of web filtering a firewall network optimization and parental controls It also provides very good phishing detection and even includes a VPN Client With no perseat license fees FortiClient with its onaccess resident protection enables users  guests to work efficiently anywhere without compromising on their security Although the network optimization seems only to be effective for FortiGate Devices and it is also less effective at blocking certain malicious URLs Moreover the functions of the VPN Client and Parental Control system are also limited 
+
+    Based in China Qihoo 360 offers a wide range of comprehensive effective and userfriendly Internet and mobile security products aiming to protect the users computer and mobile devices against malware and malicious websites Supported by cloudbased security technology the 360 sets itself apart from all other Free Antivirus software through the usage of three different AV engines comprising of Qihoos very own checksumbased engine a machine learning QVM engine and a BitDefender local engine These comprise Qihoos own checksumbased engine in the cloud a machine learning QVM engine It provides a sandbox too through which one can check out for the threats posed by unknown programsThe program lacks out in providing a parental control system Firewall or Backup facility 
+
+    One of the best Free Antivirus currently available The Comodo Antivirus includes a full range of detection engines for viruses rootkits spyware and other malware It uses Comodos proprietary Defense technology thereby guarding your system from all unknown files by treating them as a threat It also provides OnAccessResident protection cloudbased protection and an automatic sandboxing function Since the program occasionally asks for User input it may not be suitable for amateur users The Host Intrusion Prevention System and phishing protection still have a long way to go 
+
+    Malwarebytes is one of the most widely acclaims and highly appreciated malware detection solution It is pretty small lightweight and doesnt require signatures as well It also shields Java and perhaps is one of the most effective software against zeroday attacks that have never been seen before 
+
+    The biggest drawback with it is the requirement for proactive antivirus software that can work alongside it It just acts as a complement to your regular antivirus program There is also a major lack of features in the free version as compared to the Premium version But that being said Malwarebytes still is one of the premier and most reliable products when it comes to catching the newest most cuttingedge threats that other antivirus companies may not have caught yet 
+
+    The BitDefender Free Antivirus is one of the most unobtrusive antivirus available on the Internet today It provides for a Realtime Shield Active Virus Control Intrusion Detection Rootkit scanning and HTTP scanning as well The newly introduced feature of Profiles which adapt the software for particular tasks like watching movies playing games or general office work has improved its userfriendliness by a huge margin as compared to the previous versions Moreover it even includes online banking protection a 2 way firewall and a parental control system Although poor technical support combined with the difficulties faced in installing on systems that are already infected by malware may cause problems to the average user 
+
+    The Panda Cloud Antivirus takes Free Antivirus to a whole new level with its cloudbased scanner The software is also lightweight and runs of a local cache when the network is unavailable It offers effective phishing protection and impressive detection rates combined with topnotch rootkit blocking But it falls behind other Free Antivirus software due to its inefficiency at eradicating malware from already infected system 
+
+    Ranked as one of the best amongst Free Antivirus software Avira boasts of exceptional detection and blocking rates Its small footprint makes it ideal even for older PCs Offering seamlessly fast scans it also boasts of antimalware protection antispyware protection browser protection and cloud based scanning as well Although one could find the interface too cluttered and the installation and execution process to be quite slow as compared to other Free Antivirus software 
+
+    Definitely one of the most popular Free Antivirus software AVG needs no reckoning Furthermore the 2015 version has been revamped to provide a better user interface a cloud based scanning system and the ability to block infected links besides the usual detection and eradication of viruses It is also one of the smallest Antiviruses and also provides script malware protection 
+
+    Editors Recommendation I would prefer Avast over other free antivirus hands down The plethora of features that it boasts of sets it apart from all others Effortless installation an all encompassing heuristic search engine and on access protection pack quite a punch Its features such as realtime protection of files email P2P transfers web surfing instant messages and even suspicious behavior are a notch above your average Free Antivirus software It has been praised for its performance and light use of system resources and has also proved itself efficient in catching malware as well Further developments made in the 2015 version to enhance the user interface merit Avast its place on the top of our list  
+
+    Also Read Best Antivirus Software for Windows 7 81 and 10 PCs Which Antivirus Software Protect Themselves From Hacking Attacks For more technology updates and interesting stories follow fossBytes Follow fossbytes14 
+
+    Tags AdAware Free AntivirusAvast Free AntivirusAVG Antivirus FreeAvira Free Antivirusbest free antivirus of 2015BitDefender Antivirus Free EditionComodo AntivirusFortiClientfree antivirusmalwareMalwareBytesPanda Cloud Antivirus Free EditionQihoo 360 Total Security 
+
+    Antivirus software isnt necessarily the most glamourous of tech but its crucial if you want to keep your computer running quickly and healthily Fortunately theres plenty of free antivirus protection out there to choose from 
+
+    Free antivirus programs have been around for years In the early days AVG was the best free antivirus but theres no shortage of terrific options right now Weve tested the four most popular free antivirus programs to find out which is best 
+
+    While the internet is arguably safer now than it was in the dark days of Windows XP leaving your PC unprotected is still a bad idea This is doubly true for inexperienced computer users who tend to be less adept at spotting common phishing scams dodgy websites and bogus installers 
+
+    We look at the features sets offered by each free antivirus package in the review and the ease with which they can be used and their settings adjusted Most packages can be set up and largely forgotten but we also want to know whether they cover all the fundamentals youd expect in an AV suite and what extras are on offer 
+
+    We do our own performance tests by timing a scan of a known 50GB basket of files and dividing the time by the number of files scanned We then run the test a second time to check how well the software has fingerprinted the files its already scanned so that it doesnt have to rescan them if they havent changed 
+
+For most of the testing however we rely on results from AVTest wwwavtestorg the wellrespected German antivirus test site which regularly evaluates groups of all the major players in the marketplace    The company evaluates the packages under three separate headings Protection Performance and Usability Protection looks at the effectiveness of the software against both established threats and zero day attacks where it has to rely on heuristics and behavioural analysis 
+
+    Performance checks out the hit AV packages can have on the regular running of a PC It goes further than our tests in looking at its effect on other tasks such as visiting websites downloading installing and running software 
+
+    Finally Usability looks at the softwares ability to avoid false warnings or blocks of legitimate software while installing or running it It uses a set of over 525000 samples to evaluate this performance 
+
+    From these three categories each scored out of 60 AVTest gives every package an overall score out of 180 Software that scores over 120 is certified with the AVTest Award showing that it has achieved a good level of overall performance 
+
+    Always be careful to check any software you put on your computer is suitable and compatible with your existing setup No liability can be accepted for any individual problems caused by acting upon the information given 
+
+    For Windows 7 8 81 or 10 just click on Start go to Control Panel and click the Windows Update icon where it will show you if there are any updates for your PC The same goes for users with Windows 8 or 81 Sadly Microsoft is no longer releasing updates for XP 
+
+Mac users and Linux users have slightly less to worry about in terms of viruses as there still arent as many floating about for them Nonetheless Mac users should grab free antivirus software too     Dont use the same login for lots of sites If one falls into the wrong hands your whole online life is up for grabs Try picking one and add a few letters related specifically to each site youre logging into 
+
+Most web crime still happens via email so be on guard when checking yours Dont open any attachments youre not expecting or click any random links you find in the text see the Phishing Scams guide    The way around this is to make sure youve added senders whose emails youd like to receive to your accepted list The same goes for this sites weekly MoneySaving email its combination of freebies money mortgage and debt info means it can easily get caught in spam filters 
+
+    Only give out your email address to people you know Dont post it on public internet forums including MoneySavingExpertcoms or chat rooms Spammers often use software robots or bots to read all forums store any emails and spam them 
+
+    If you download your emails to a computer eg using Microsofts Outlook you can create rules to stop common spam by entering key words eg VIAGRA so those emails are automatically filtered But spammers try to beat it through misspelling words or using numbers in place of letters eg V14GRA so youll have to block out other combinations too 
+
+    Looking for a piece of software Find out which company makes it first and then go to its site to get it there rather than from a third party site found via Google For smaller free or shareware programs try using big sites such as Downloadcom rather than just getting them from anywhere that shows up 
+
+    These are transmitted via websites email attachments directly over the internet or via any other removable media They hide in applications or files and spread from computer to computer generally wreaking havoc wherever they get the chance 
+
+    Trojan horses are hidden within a harmlesslooking file eg a picture of a celebrity or progam ironically theyre often dressed up as antivirus tools They aim to trick the user into installing malicious software like spyware or adware 
+
+Worms take advantage of any open internet connection They try to sneak in and replicate on the computer Once loaded they often start to send spam email from your computer without your knowledge    Its a common misconception that producing computer viruses is the domain of angstridden teenage geeks with little to do showing off to their equally reclusive peers While there may have been some truth in this at the beginning and of course it still happens these days its often about big criminal business 
+
+    Some viruses allow your computer to be controlled via a DDOS attack This is where a website is closed down due to simulated simultaneous use by millions or even billions of users This can be for political reasons a ransom to hurt competitors or just for fun 
+
+    Many people whose computers cause this are unaware its happening MoneySavingExpertcom has been hit by such an attack Ironically some of the people denied access for three days couldve been contributing to the closure via hidden viruses on their systems 
+
+ Get Martins Free Money Tips Email For all the latest deals guides and loopholes  join the 10m who get it Dont miss out FAQs  Unsubscribe  Past Emails  Privacy     Pay for antivirus software from biggies like SymantecNorton or Kaspersky and itll cost around 40 per year Yet you can get free software which while not quite as effective as paidfor programs still keeps on top of threats Regardless of which route you take remember 
+
+    Its not just about how uptodate your software is If youre not using it whats the point Try to fit in a full ondemand scan once a week where the virus scanner flicks through all the files on your hard drive This should make sure nothing slips through the net 
+
+All MBNA cardholders signed up for Online Card Services can get a years free access to McAfees Online Banking Suite which includes its antivirus spyware and adware programs and moreAnd HSBC customers can get 12 months McAfee VirusScan Plus RRP 40 for nowt  after the first year youll have to pay full price or uninstall it Forumites are sceptical about it though    Microsofts Security Essentials antivirus package is completely free to users of genuine Windows machines so itll verify your copy Two versions are available for Vista and Windows 7 Sadly XP is no longer supported 
+
+    The softwares unobtrusive and provides quick and comprehensive protection from viruses trojans and spyware For casual Windows users it feels and runs like part of the regular operating system rather than an added extra But some experts say its not as good as it used to be 
+
+    Windows Defender runs in the background and tells you when you need to take specific action You can use it anytime to search for malware if your computer isnt working properly but reviews are mixed on how thorough the scans actually are 
+
+    The free antivirus software of choice for many techies Aviras won many tech publications free antivirus roundups by providing both the most thorough and fastest software protection If you have the knowhow itll do everything you want it to but its best for those that know their way around a PC 
+
+    Panda Securitys free Antivirus 2016 software has been highly praised by reviewers and has scored well on tests carried out by antivirus evaluation site AVTest Plus it includes additional features not often found in free antivirus software 
+
+    For example it prevents USB drives running software automatically when inserted into your computer  as well as vaccinates your own USB sticks against infection from other PCs  and a monitoring function to highlight security information about current running applications 
+
+    AVG is unobtrusive doesnt use too many resources and will regularly autoupdate It includes LinkScanner a realtime threat detector which checks links out when youre surfing the web on Firefox Internet Explorer and Chrome only and marks unsafe threats with red flags 
+
+    Simple to use Sophos antivirus for Macs runs in the background while you work scanning files for threats whenever your Mac opens them Its had fab reviews in techie publications but has been known to slow down some systems 
+
+    So why arent we all going firewall mad Well we tend to connect to the web via a router rather than just a modem and routers provide a hardware firewall Make sure yours is switched on and set to a highenough security level Consult the manual or search online for the make and model number if you dont know how to check 
+
+    While youre there check youve changed your router password from its factoryset default Youd be surprised how many connections are hacked and how much havoc gets wreaked because the standard password hasnt been changed Spend a little time to get your settings right here as router firewalls give a higher level of protection than software ones 
+
+    Windows XP Vista 7 and 8 have a firewall builtin which should be enough for most people especially those who already have router firewalls but make sure its switched on and your copy of Windows is uptodate The firewall can be set on low medium and high levels of protection 
+
+    If the Windows firewall is set on high you may need to spend some time tweaking its settings in the Control Panel to stop it becoming a nuisance By default itll stop you downloading files over Skype and itll block a whole load of programs that download from the web 
+
+Agnitums Outpost free edition is a good allrounder and has a good combination of top protection and userfriendliness Its totally free and there are no messages nagging you to buy a copy    Its totally free but youll need to register and activate the licence by email within 30 days of installation While Comodo outperforms many similar offerings it can be intrusive especially if you just want a firewall that does its job quietly 
+
+    Since the early days all webready Macs have come with some sort of firewall as standard Which yours offers depends on what version of OSX youre using To turn it onoff and change the settings go to System Preferences  Security  Privacy  Firewall 
+
+    There are other types of malware you can find on your computer Often legitimate developers will design programs that have useful functions but theyll also provide the owner with useful information about you or try to sell you things 
+
+Its easy to assume these are related to the site you were visiting yet often they arent If youve closed your browser but popup windows still appear on your desktop chances are youve been infectedMalicious spyware programs have become much more advanced in recent years undoubtedly due to their potential for criminal moneymaking so some of yesterdays top spyware removers can no longer cope    If youre being troubled by adware use a popup blocker to alleviate the symptoms while you find a solution Be aware though that not all popups are bad  some sites open new windows in this way If you want to see them hold down CTRL while clicking the link 
+
+    There are a couple of legit spyware programs Googles Desktop can send info on what youve been searching back to Google and Alexas toolbar can do the same In both cases these firms want to monitor your computer to help develop their products with data about searching habits 
+
+The usual way for adspyware programs to get on your computer is by attaching themselves to other things you download So make sure you check the veracity of download sources before getting files    Like most antivirus tools spyware removers work by comparing whats on your machine to a list of known offenders As ever the top antiadspyware programs are commercial but that doesnt necessarily mean you need to buy them Try these first 
+
+    AdAwares great at detecting and removing malware and this new version works even faster than previous ones On the downside most features are locked in the free version If you make it your primary tool you wont be fully protected 
+
+While the free version doesnt provide realtime protection or scheduled updates AntiMalware is still powerful enough to make a big difference As a lightweight program its pretty quick too    Spybots been going for a while and while it has a pretty long list of features its always received mixed feedback Its fairly processorhungry so if your computers already slow itll be an unwelcome addition 
+
+    SecureMacs MacScan software is built to detect isolate and remove spyware apps as well as blacklisted cookies saved on your system Its a 30day free trial youll pay 40 26 to upgrade if you like it Reviews are mixed so if it doesnt work for you just delete it once the trials finished 
+
+    Not really an antispyware tool but AVGs LinkScanner is worth a look for Mac users It uses realtime threat detection which checks links out when youre browsing the web Firefox and Internet Explorer only and marks unsafe ones with red flags so you know to avoid them 
+
+    Weve all had moments of horror even in this very office where due to hardware failure power cuts or just plain ol silly mistakes precious documents disappear As more and more of our lives are committed to the digital domain backing up data is becoming increasingly important Since there are ways to do it free youll only have yourself to blame if you dont 
+
+    If youd rather keep more tangible copies of your files the options are either storing them on CDs and DVDs youll need a CDDVD writer or on an external USB hard drive for biggermore files As technology marches on the latter are getting increasingly cheap 1TB 1000GB for as low as 40 if you buy online 
+
+    If youve already lost valuable files there may still be some hope in the form of recovery programs Freeware programs Restoration Recuva Puran File Recovery and PC Inspector work to recover lost files but as you may expect its a lottery as to whether they actually succeed 
+
+     If a link has a  by it that means it is an affiliated link and therefore it helps MoneySavingExpert stay free to use as it is tracked to us If you go through it it can sometimes result in a payment or benefit to the site Its worth noting this means the third party used may be named on any credit agreements 
+
+     You shouldnt notice any difference and the link will never negatively impact the product Plus the editorial line the things we write is NEVER impacted by these links We aim to look at all available products If it isnt possible to get an affiliate link for the top deal it is still included in exactly the same way just with a nonpaying link For more details read How This Site Is Financed 
+
+    We think its important you understand the strengths and limitations of the site Were a journalistic website and aim to provide the best MoneySaving guides tips tools and techniques but cant guarantee to be perfect so do note you use the information at your own risk and we cant accept liability if things go wrong 
+
+    MoneySavingExpertcom is part of the MoneySupermarket Group but is entirely editorially independent Its stance of putting consumers first is protected and enshrined in the legallybinding MSE Editorial Code 
+
+     They say you dont get something for nothing but when it comes to protecting your PC against online threats thats not the case There are plenty of free antivirus tools around that can automatically block malicious code and scan the files on your PC to ensure youre not unknowingly harbouring something nasty In this article we bring you the best free antivirus packages of 2015 to keep your PC safe 
+
+    For those running Windows 7 or Windows Vista the default option is often Microsoft Security Essentials  although you will need to have downloaded it via Windows Update or from Microsofts website If youre on Windows 8 or newer then Windows Defender comes preinstalled and ready to intercept viruses and spyware  
+
+    As antivirus programs go Security Essentials is as straightforward as it gets most of the time you wont even know its there and it has very little impact on the responsiveness of your system In our independent testing throughout 2014 it consistently allowed more malware than other free packages to slip through the cracks but its turned it around dramatically in 2015 now offering performance that is better than some paid alternatives 
+
+    However if youre on Windows 8 or newer then sadly Security Essentials isnt an option  and going by the respected security experts over at AVTest wed recommend installing thirdparty antivirus software Windows Defender puts in a reasonable performance but its still some way behind the likes Avast Free Antivirus 
+
+    Possibly the best known alternative is AVG AntiVirus Free which has been providing free virus protection since the 1990s The modern AVG client actively detects and blocks viruses and also integrates with your browser to warn you away from known dangerous websites 
+
+    Recently weve seen AVGs overall protection results improve markedly from a lowly 76 in the period of JulySetember 2014 to a respectable 94 in our most recent tests see table at the bottom of the page for a full breakdown 
+
+    Our favourite free antivirus tool however remains Avast Free Antivirus  as it was last year In our tests this package gained not only an impressively high protection rating but it did so in the safest possible manner by preventing them from gaining any kind of foothold on our test system This enabled it to maintain an edge over AVG which protected against the same number of threats but allowed more through before neutralising them than Avast 
+
+    Avast is also light on resources and shouldnt noticeably slow your PC down and although like AVG the frontend includes advertisements for paidfor products theyre less plaintive For all these reasons Avast Free Antivirus is our recommended free antivirus package 
+
+    Our most recent tests have seen Avast lose its lead over the rivals here but Avast remains a likeable easytouse package that delivers effective virus protection It is a touch behind Microsoft Security Essentials for overall performance but if youre on Windows 8 or newer its well worth installing 
+
+    Security Essentials has come on in leaps and bounds  it performed better than third party security software from Avast and AVG in our most recent tests If the other features supplied by Avast or AVG appeal to you then by all means switch but theres no need to install anything else to boost your protection levels 
+
+    Additional testing by Dennis technology Labs carried out during January and March 2015 expanded the tests to include Panda Free Antivirus The results indicate its an improvement over Microsoft Security Essentials but that it cant match AVG or Avast for performance 
+
+    Pandas malware protection score isnt bad at 90 nor is its false positives rating which is 94 However its closest rival AVG has been steadily improving of late and performs significantly better particularly when it comes to false positives For the ultimate in protection meanwhile you might want to consider Avast or 360 Safe see below instead 
+
+    Each packages core antimalware features are tested at the stateoftheart facilities of Dennis Technology Labs Rather than artificially infecting the target systems they are set up in an environment that mimics how our PCs become infected in the wild to get an accurate picture of how each security package fends off malware in realworld situations 
+
+    We look at whether the package provides protection and also how it handle each threat The resulting data informs a protection rating of up to 100 Meanwhile we also install legitimate software to see what the security packages block and where they prompt for use r intervention factoring in the obscurity or otherwise of the application We award a second score for false positives where 100 represents a perfect record 
+
+    After formal testing we run through each package to check its other features and get a feel for its usability and its burden on system resources We measure the latter by monitoring RAM and CPU consumption over the course of basic scan also timing how long these scans take to complete All this information is factored into the final Overall star rating youll see at the top of each review 
+
+    screw the dumbass windows defender it sucks ass i have avast antivirus scanner its better its been around longer than windows defender that dumbass thing lets a shitload of viruses get into ur computer enjoy the piece of shit windows defender and McAfee which i might add is a young company and doesnt have much experience as avast does theyve been around since the 80s ur an idiot for removing third party apps that are virus scanners enjoy ur virus infected computer for keeping the dumbass windows defender only 
+
+    If youre clever then youll know that if you knew what you were doing on the Internet then you wouldnt be using such top of the range products in fact if you know 100 then you dont even need an Antivirus program to protect youAnd by the way Microsoft shares their knowledge with third parties such as Avast to improve third party discoveries and third parties take all the credit for it 
+
+    dude ur blind i had a trojin virus and the dumbass windows defender couldnt delete it also avast and macafee did and so did avast they detect viruses much better than shitty windows defender u sir are an idiot 
+
+    Thats the worst virus you can get and sometimes when a virus gets on your system theres nothing you can do about it my friends gf got a virus and it created several Itunes icons before it crashed and she was unable to boot back into Windows and that was Avast protection my mate had Avg still got infected 
+
+    For fixing clients pcs though I use MSE and MalwarebytesFor me when I went through the amount of junk on my mates 81 updated Defender found several browser hijackers and it fixed them Malwarebytes found some Malware 
+
+     Immediately when I setupa pc make sure its setup properly the main problem that adults have with their kids is games which is all they want the problem in Windows is the default Admin account and having 100 unrestricted access to play a game you dont need Admin you dont need that for anything unless youre changing something100 pc problems affecting pcs are done using Admin 
+
+    dude ur really stupid just use the virus scanners i mentioned windows defender cant protect u from bad websites or stuff like that i cant stand my stupid dumbass computer saying activate windows defender it sucks even when i uninstall avast it says windows defender is insufficient so yea it cant delete all viruses and it cant protect u form everything 
+
+     you obviously have a problem with your system whether it be virus or currupted file or changed settings your current setup cant be that good because whenever i did a clean install of Windows for the first time for a client i never got given an insufficient error nor did i get the annoying activate Defender error from your vision of it it doesnt make any sense 
+
+     third party firewalls work similar to the built in firewall they have more features but do the same job all they do is warn you if something attempts to change somethingWindows does that if something isnt on your allowed list it will challenge itsome might say hang on are you sure you want to do this youre not going to say no if you want to do something once you say yes to any Firewall it cant do anything it assumes youre comfortable with the changes 
+
+    on my pc Win 7 all the latest service packs and updates installed Microsoft security essentials installed with Malwarebytes antimalware free i do everyday use in a standard user accountand enter a password when i need to change or install somethingI do update Microsoft Security essentials and run a quick scans often and have run a full scan once a week if i do get infected it has been because i downloaded something and its been flagged as suspicious but isnt actually an infection just a false alarm all of the time i use it the machine is clean 
+
+    i run disc cleanup and disc defrag regularly restart my pc regularly i dont download from unknown sources i will always go to the official link if it works i dont click on random ads taking me to other websites i dont click on suspicious emailsI dont give remote access to the PC to anyoneThe broser i use is Google Chrome Microsoft Security essentials has been more than enough for me 
+
+    well mybe it is enough if you are visiting one or two usual sites but if you are visiting or downloading from many different sites youll need more cause if you visit av test org youll notice microsoft security is the worst 
+
+    im aware that over the past 2 years i think some of the Antivirus reviews have been negative about it but i also know that Microsoft have been always been slammed for poor security patching the amount of security holes and a back door 
+
+    Antivirus apps are truly one of the most controversial genres in all of Android With all the stock protection getting malware is all but impossible so many pundits will say that you dont even need one of these Even though that is true there are people who feel safer with third party protection and dont mind paying for it Really its a toss up If theres a great antivirus Android app that weve missed please let us know in the comments 
+
+    Editors Note Thanks to a change in how Google handles SMS permissions starting in Android 44 there isnt a single antivirus or SMS blocking application that can block SMSMMS on Android 44 KitKat Thats actually a problem caused by Google and their implementation of Hangouts However many of these antivirus applications list SMS blocking as a paid feature knowing full well that it doesnt work on KitKat and took absolutely no steps in warning their potential customers that this is the case Thus all antivirus apps that list call blocking as a paid feature and dont mention that it doesnt work on KitKat took a hit to their ratings Those who list it as a free feature did not because its not a feature people are paying their hard earned money to use It should also be noted that all antivirus apps that dont list their subscription rates in their app description where they belong took a hit to their rating while antivirus apps that provided their price details in their app descriptions got an increase to their rating Transparency matters 
+
+my buddys sister makes 87 every hour on the internet
+ She has been unemployed for 6 months but last month her payment was 19402
+just working on the internet for a few hours go right here CashfigCOM    Your Alt keys by default only give you characters found in your default MSDDS character set from character 0 to character 255 If you type a larger number then this method wraps that is Alt256 gives the same value as Alt0 Alt257 gives the same value as Alt1 Alt258 gives the same value as Alt2 and so forth until the values wrap again and again and again until you get to Alt3232 which indeed gives you   
+
+    If you type Alt3232 in Microsoft Word or in Wordpad you will get  because in those applications only if you type a value over 255 you will get the Unicode character that corresponds to the decimal value that you typed  
+
+    On a web page and in most forums you can just enter an HTML entity For  the hexadecimal HTML entity is   x c a 0  without quotation marks or spaces The corresponding decimal HTML entity is   3 2 3 2  without quotation marks or spaces Place either entity on a web page or forum and it will convert to the character when viewed provided the viewer has that character in a font and provided the browser properly supports automatic font replacement Otherwise it will appear with an unknown character glyph  
+
+    but the problem is that their 1 year license is only arround 5 without support and 10 for 1 year prety normal they do offer a lifetime license if you want to support them this is in no way mandatory most good package are rated at 75 doesnt see this as a serious review 
+
+    If you download apps from Playstore only  there is no single chance you can get any kind of malware And even if you side load them from your PC  most PC antiviruseswell not counting Drweb as antivirus here scan them for all known malware for android too 
+
+    And since Linux system doesnt allow to get any common viruses from simple browsing downloading strange content is your choice  Any antivirus app will just sit there slowing your system and eating battery
+I suggest installing one like once in a month or 2 Run trial scan system and delete it  profit 
+
+    Absolutely not true You really should check your facts The Play Store isnt monitored like iTunes and while malicious apps may be rare they arent unheard of Just try searching for BBM Android malware on Google 
+
+    If you were following Google You d know that since October 2012 Google play has built in malware scan for all app uploaded by developers This scanner got 2 big updates and is really up to date now Also there is loads of free anti thief solutions that are well known and didnt load youre system with antivirusPrey is one of the most trusted for me Also there is one from Google And one for custom roms from cyanogen team  
+
+    If you read carefully article in the linked site  you install app from Google Play that has no malware and than app itself asks you if you want to download an app separatly and downloads it from private server as separate apk file not from Google play Any app can link you to website  its up to you if you agree to sideload app from there 
+
+    Really This article proves otherwise Zoner is one of the more popular antivirus apps on the market with users which would reflect in their comments and yet it only scored 68 in the AV test now to me a 68 is failing This was mentioned earlier ironically in the comments before yours Im guessing you didnt read the comment section but just scanned a few and decided to comment on one 
+
+    Also most comments left will be from users without much user experience You are going to trust a bunch of comments from new users kids teens soccer moms etc when most of you constantly are critical of the writers who work in the industry Please explain how that makes sense We have all looked at the reviews and comments on particular apps that have excellent reviews and comments from 100000 or more users and have thought these people dont know what the F theyre talking about This app sucks Or something to that effect  
+
+    Oh by the way a lot if the reviews and comments on apps are paid for There are users who download the app rate the app write a comment remove the app and get paid Its not much at all but if you do enough of them it adds up 
+
+    Playstore is monitered U got your facts wrong Plus with malwarebytes it also scans every store download and not even once has it detected any virus Theres more junk on this website than and playstore app  
+
+    YEs Lookout was one out t of the first anit virus apps to and was the only one in the playstore
+I never really liked LookOut because no mater what it always interfered with something huge battery hog couldnt receive calls people could barley hear me when I talked to them over the phone never got text messages nor was I able to send 
+
+    took me awhile to figure out but once I uninstalled LookOut everything went back to normal
+I use ESet mainly because Ive had it on my computers and I think it is one of the best security suites next to AVG and Kapsparskey 
+
+    And I dont know about the mobile version but McAfee is a bitch to get completely out of your system Or at least it used to be They may have fixed that by now It just attached itself too tightly to too many files 
+
+    Ill tell you what Ive used most of these at one time or another on phone laptop or pc and I have Avast and CM on my phone now But until someone finds a way to mess it up CM is the coolest security system Ive ever dealt with 
+
+    Its strange that some authors dont even try to get enough information before posting an article If you want to write about an antivirus you must look at the AVtests AA lists Zoner who got a bad score as you said and Norton which has an impact on performance but they dont talk about Comodo Kingsoft or Kaspersky 
+
+    So what does that test say about device compatibility customer satisfaction resource usage extra features price and availability AVs tests dont measure those things We do All of these are capable and finding the big problems that people are most likely going to run into  
+
+    I understand that and its normal to include these into your review but you cannot include an antivirus that gets a low score at an AVtest eg Zoner gets 68 which is way below the average 952 For an antivirus consumer opinion is less important that its score 
+
+    The point I was trying to make was that Zoner made the list for far more than just its antivirus functions It does a lot more that people could find more useful Also even at 68 it still probably catches and blocks the most common and dangerous malware Android can be infected but lets face it you only get infected if you do something really off the wall like downloading an app from an advertisement on a website that sells black market organs or something crazy like that Most Android users will never find themselves in a situation where theyll even come into contact with that other 32  thank you for the comments 
+
+    I am new to smartphones but I thought antivirus was an important issue When I started my research for the best AV I had no intention of getting other miscellaneous functions There are countless other apps for that Is AV pointless as would be this list and discussing it considering I have no plans of downloading an app from an advertisement on a website that sells black market organs or is it actually important If I need AV I would want one that is free and the best at handling viruses malware and spyware with a popup blocker Something that runs in the background and is easy on the battery and data usage I am I asking for to much What is the bottom line on a simple highly effective AV and how necessary is it in the first  
+
+    Truth be told the miscellaneous functions are what people really want If you follow the rules and dont disable the stock Android security features theres pretty much no risk of anything bad happening to you 
+
+    none you only have to check them out and try to understand why that app is asking that permission
+for example if i saw that a calculator ask permission to read sms to the dial to gps etc etc ill be a bit perplexed but for other app maybe that permissions can be necessary 
+
+    And in addition to what Dario753aC said always remember that most developers on Google Play are using those permissions for completely legitimate reasons Dont immediately be alarmed about permissions for accessing contacts making phone calls etc
+If its a very mainstream app Like Pandora Radio most of the time you can rest assured that they only want permissions for contacts to provide the typical socialsharing functions youd expect or if an app wants access to the phone dialer its usually just there so you can call a number directly from an app or something stimular
+Every permission has a legitimate purpose You just have to be aware that once in a while permissions will be excessive Always email the developer and ask them why before leaving a bad review You can judge by the way they answer if they have something to hide Stick to applications that are well known or come from well known development teams and dont ever be one of the first 1000 people to download an application from a completely unknown developer with no traceable history Wait until there are plenty of reviews to give it your trust Other people will always get curious You dont need to be a lab rat Let them have a crack at it first
+If you stick with those very basic tips you should never need an antivirus 
+
+    Im not sure whats more depressing That people think they need an AVP on an Android phone or that sites like androidauthority keep pushing this bull on folks Makes me think they should remove the authority part of their website 
+
+    If this is that bad for you then why do you come here and read these articles Why take the time to write defamating remarks I just dont get it For me I agree that AVP is a waste of resources for me but if other ppl want it then thats their business I didnt pay for their phone and I dont have a right to tell them what they should or should not use The publisher wrote a list of apps because the ppl asked them to Not because the are trying to be THE Authority on others phones 
+
+    ahahah i agree never understood people that has not root dont install external apk dont do anything with their smartphone but facebook and whatsapp and they wanna have an AVP why what do you expect about that do you think youre using windows XP 
+
+    i wanna told what a friend of mine said we were discussing about usefull of AVP and she said that if you dont have an AVP on your android you get a lot of malware and virus only surfing the web with the browser ahahahhaha i was laughting at her too much 
+
+    its the best one to do what i dont think that you need an antivirus on android if you dont install cracked apk so dunno how you can say that one is not good and another one is goodin my opinion on android the antiviruses do a lot of other things not concernig with virus as permission management privacy settings and possibility to find your device in the case youll loose it 
+
+Lookout Security 45 rated is free and provides antivirus scans apps pre installation and routine antitheftloss I have it installed on all of my devices and it has worked flawlessly for years    A new user with a cheap weak GB paygo phone Ive been interested in this topic more for data on the phone and SD than the phone itself After poking around this eve Ive decided BitDefender is the least demanding  most effective Supplemented with Android Lost app for phone recovery the phone is reasonably covered with tiny resource requirements and no cost  
+
+    My only concern so far is that Android Lost might be disabled if the current Gmail account is changed by some moron who wants to steal a 50 phone Im not sure if other phone finder apps have this problem Ive looked at AppLock and similar but they dont seem to add much to my polka dot lock screen that any finder or thief would have to get past Any advice about that would be welcome 
+
+    nonono armor for android oct 6th 2013 702am PST Charges You 99 cents per day OMFH and couples that with some other monthly cost so You need to keep notes and update this revie HELLLLLO Think we want old outdated web No way FYI get with it Make it so 1    o    
+
+    nonono armor for android oct 6th 2013 702am PST Charges You 99 cents per day OMFH and couples that with some other monthly cost so You need to keep notes and update this revie HELLLLLO Think we want old outdated web No way FYI get with it Make it so 1    o    
+
+    What about Lookout Samsung is going to be including it with all of their future phones very soon giving us another reason to root and remove the bloat Anyway I still think that AV on Android is entirely useless Just be careful what you install and review the permissions Dont root if you dont have to and dont grant root to everything that asks for it You should also disable root for ADB so a savvy thief cant easily hack your phone These AV apps are glorified progress bars and just add lag to your system They also want to sync your data to their own cloud which is not cool considering my contacts photos etc are already backed up through Google Sure the AntiTheft features are good if you dont use Android Device Manager but unless you want to pay to feel more secure I wont be loading any of these apps In fact I scanned a friends phone which had a bad apk that was popping up messages The scanner didnt even find it let alone block the advertising 
+
+    What I want for my rooted phone and Custom Rom is real security so if I lose my phone someone cant steal my ROM image backups or clone my entire phone CyanogenMod 101 is offering SMS encryption between Cyanogen peers Other than encrypting my entire phone another performance hit are there any other ideas out there 
+
+    Im new to smartphones so to the benefit of those that are likewise or that may have questions regarding AV on android I offer this link I found while researching the issue It tackles questions like is the play store malware free what is the main threat to android phones and pros and cons of security apps  
+
+    ok ill try to make it easy if you use linux you maybe already know what root is
+anyway root is a part of system you cannot wrote because you can damage the firmware just think about dialer modem gps config boot image if you wrongly cancel a part of that you can damage your firmware and a part of that will not work
+so producers dont allow you to wrote that part of system but if you get root access in your phone you can have access to that part of firmware and modify that so there are some apps that requiers access root because they have to access that part of firmware for different reasons 
+
+    in you pc especially in windows you can think about the different type of users there are normal users and administrator in fact when you use a normal user you cant do something and you have to enter with the administrator user 
+
+    but in PCs you already has root acces you only have to log in as administrator in phone it is blocked by producers in order you cant damage the system so in phone you are like the normal user and you have not possibilty to be the administrator user if you dont unlock root access with some zips 
+
+    so we were talking about virus its really improtant that if you got root access on android you dont give root access permission to all the apps you install because when you give them root access they can compromise your system thats why i said that if you dont install cracked app and you dont give root access to all your apps you really dont need to have an AVP 
+
+    I spoke to TMobile tech support re wifi calls While on the phone a pop up said my memory was low but it isnt Tech guy said I could have a virus I said that I have Lookout Tech guy said Lookout could be the problem Um What Im NOT savy re these things so what do I know Now Im just wondering if I should reset my device to factory default  exclude the Lookout install or what  
+
+    Antivirus programs are also memory hog Just yesterday my relative was fixing a computer for someone who had Norton The computer had a 235 GB hard drive and Norton created a 166 GB backup WTF That means that everything else on the hard drive only took up 69 GB and the backup took more than all the other files and the OS on the hard drive I reccomend downloading a file manager and clearing out your internal storage and then do a factory reset to get rid of the antivurs program alltogether They are tricky to get rid of You should find a folder called Lookout or something and delete it 
+
+    I have a galaxy note 2 I dont know how many apps you put on that thing but I dont think spyware is going to make a pop up like thatand after dealing with Time Warner techs I dont know how many times let me tell you the guy doesnt know what hes talking about He actually tried to tell me that the speed test app didnt workand its impossible for their lines to get congested no matter how many people are on it LOL SHOOT ME NOW 
+
+Sorry for the misuderstanding The anouncement says the app will be free this year However the app is available for a while 
+Cheers mate    Im using BitDefender because its so light it has a negligible performance impact with a good reputation It does appear these services are unnecessary for the time being but its cheap insurance Dont know why the writer says it only system scans in fact it scans every app install and update and briefly shows a flag that the app is clean 
+
+    If you download apps from those kind of websites you do need an Antivirus If you just install apps from Play Store you dont necessarily need one but check the permissions especially SMS contacts and location access 
+
+    Companies cant give away their product for free and remain in business Period They are making a profit how Perhaps tracking you and selling your data Wake up mindless Droids pull your head out and look around I also noticed a lack of any testing whatsoever Reviews based on the amount of downloads Really 
+
+    NQ Mobile Security and Antivirus is very secure and protective Secures the web as well as phone and its applications Awesome update Great interface Wish they introduce option of daily scanning Wow extra complete mobile security app ever in a very friendly and affordable price I love this app Excellence jobkeep it up buddy 
+
+    I like my lookout app I pay all my bills by encrypted phone call and only my credit card number may be in devices but it is a protected credit card so I wouldnt be held accountable and theres no banking account information or anything embarrassing in my devices By the way I think anyone convicted of identity theft should serve a minimum of 25 years in jailif youre an illegal alien and commit that crime serve it in the jail of your country 
+
+It is the second article first is  that given me an insight to learn which is the best free antivirus software however I wanna know which is the best  a free version or paid    Android smart phones are on the rise now a study conducted  an american university of data and electronic gadgets has proven the more and more people are using the cellphone for to log on to social networking site and to check their emails with this rise ti has become a target for hackers and malicious persons to make virus spy wares and other malwares dont be a victim and leave your private data vulnerable to the blood hound crooks get secure NOW with a trusted antivirus for your phone and tablet today  
+
+    a word of warning on Lookout its a good app and served me well since my first android device buthad a major issue with it recently after purchasing a Gear 2 Neo device
+Lookout would freak out and would start running my Note 3s CPU at 100 until the phones battery died or the phone was restarted you could not stop it no matter what you did Uninstalled and havent had issues since seems others had similar issues with Lookout  
+
+    ESET employee speaking here let me correct one small fact  virus definition updates are available for everybody  the difference is that in premium version they are downloaded automatically while with a free version you need to tap a button to download the newest updates 
+
+    Iv personally tried every single one of these apps on different android htc mid range devices and only eset was the best one for theft recovery use of anti virus that dont make the handset crash or start laaging on the installed apps 
+
+    Start working at home with Google Its byfar the best job Ive had Last Wednesday I got a brand new BMW since getting a check for 6474 this  4 weeks past I began this 8months ago and immediately was bringing home at least 77 per hour I work through this link go to tech tab for work detail 
+
+I got Cerberus for AntiTheft it works perfectly fine lookout came installed never used it
+Avast works really well too interested in trying CM Security as it was mentioned to be lighter on resourcesThankx for the articletons of choice which is wht I love Round this time last year discovered I had a Heuristics Shuriken Thats is why I will never go near anything that is remotely close to McAfeeThere are few more simple tips and techniques that are very effective You should take these preventive measures in order to protect your devices security I would like to share here     If All you need a lightweight  efficient antivirus scanner you may consider this Antivirus Security Virus scan This has High Ranking Antivirus Security in TOP FREE TOOLS Currently 40 
+Link download 
+Features  
+
+    The package size of this Antivirus is below 15 MB total space its consume is approximately 5  6 MB in comparision to 1530 MB of many popular antivirus for android on googleplay such as Avast Antivirus AVG antivirus CM Antivirus 
+
+    I have mentioned on my blog post that CM Security is the life time winner I personally use Cm Security for a year and I very much impressed I guarantee you never back down once you use CM Security You can check out why I like CM Security more to other security apps 
+
+    Few days back I shared an article having few fine antivirus apps for Android Devices 
+Just few minutes back I was going through an article on Lifehacker where Antivirus programs were one of the programs which are not good for Android device Though I feel that antivirus programs also protect from the virus which is mostly carried in our SD card
+Though I shared only 6 Antivirus programs in my list which are also listed in your list I would like to update my article soon with the remaining ones Glad that I landed here 
+
+    I used to have CM It would do a complete scan in less than 1015 seconds Sorry but that just doesnt seem right I now use Avast and it takes more than 3 12 minutes for a complete scan I have no faith in CM None whatsoever  
+
+    If this was Windows and theres plenty of driveby malware that can occur if youre running Internet Explorer and such then obviously you need a minimum level of virus protection on your PC But this is Android and driveby malware doesnt infect the phone like that right 
+
+    So if you just stick to the Google Play store and mostly just install the TripleA apps like Whatsapp Hangouts Instagram etc etc then what is the danger here Why would need all this virus protection apps then 
+
+I dont mind my latest find a lite antivirus that is under 2mb in app size It even caught a new virus in a game as soon as installed from google play store I am impressed     Even this antivirus is too cool   It even monitors every app install to ensure security  that new app is virus free This light antivirus is also about 2 MB in size light  efficient antivirus security for 2015 
+
+    I like to have a security app that protects and cleans my phone in one app Unlike Clean Master and CM Security where you need both to clean and protect your phone I found PSafe total and 360 Security to be the best that fits my needs 
+
+    At one time I tried CM and it would do a scan in a few seconds I now have Avast and it takes around eight minutes to do a scan No way CM can do a complete scan in a few seconds Theres enough Chinese crap sent here Im not taking Chinese security on my phone and tablet 
+
+They have made it worse there are no graphs no historical data no component status with viruses blocked virus chest or scan count no realtime data with shields activity download info or last MoreI have been trying for over an hour to uninstall avast from my computer and it refuses to let me It is acting like a malware itself It is not my computer as it works uninstalling everything else More
