@@ -115,7 +115,8 @@ google(keyWord, function (err, next, links){
     if (next) {
         next()
     } else {
-        console.log('done');
+        console.log('******** START CRAWL *******');
+        c.queue(urlList);
     }
 
   }
