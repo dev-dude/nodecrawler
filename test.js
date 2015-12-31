@@ -26,16 +26,24 @@ var googlePages = 1,
     temperature = 0.5,
     length = 10000,
     crawlerDirectory = '/home/ubuntu/server/nodecrawler/',
-    rnnDirectory = '/home/ubuntu/char-rnn/';
+    rnnDirectory = '/home/ubuntu/char-rnn/',
+    test = false;
 google.resultsPerPage = 5;
 
-// reset the file
-fs.truncate('input.txt', 0, function(){console.log('Cleared input.txt')});
+test = process.argv[3].toLowerCase() || false;
 
-// empty training directory
-fsExtra.emptyDir('/home/ubuntu/char-rnn/cv', function (err) {
-  if (!err) console.log('Successfully Emptied Cv directory!')
-});
+// If test don't rest the file and clear the directory
+if (!test) {
+    // reset the file
+    fs.truncate('input.txt', 0, function () {
+        console.log('Cleared input.txt')
+    });
+
+    // empty training directory
+    fsExtra.emptyDir('/home/ubuntu/char-rnn/cv', function (err) {
+        if (!err) console.log('Successfully Emptied Cv directory!')
+    });
+}
 
 var checkNumbersInString = function(string) {
     var length = string.replace(/[^0-9]/g, "").length;
@@ -164,24 +172,33 @@ var c = new Crawler({
 });
 
 keyWord = process.argv[2].toLowerCase();
-google(keyWord, function (err, next, links){
-  if (err) console.error(err);
 
-  for (var i = 0; i < links.length; ++i) {  
-      console.log(links[i].link);
-      if (links[i].link) {
-        urlList.push(links[i].link);
-      }
-  }
+/***** ENTRY POINT *****/
+if (!test) {
+    google(keyWord, function (err, next, links) {
+        if (err) console.error(err);
 
-  if (nextCounter < googlePages) {
-    nextCounter += 1;
-    if (next) {
-        next()
-    }
-  } else {
-      console.log('******** START CRAWL *******');
-      console.log(urlList);
-      c.queue(urlList);
-  }
-});
+        for (var i = 0; i < links.length; ++i) {
+            console.log(links[i].link);
+            if (links[i].link) {
+                urlList.push(links[i].link);
+            }
+        }
+
+        if (nextCounter < googlePages) {
+            nextCounter += 1;
+            if (next) {
+                next()
+            }
+        } else {
+            console.log('******** START CRAWL *******');
+            console.log(urlList);
+            c.queue(urlList);
+        }
+    });
+} else {
+    // Test options
+    newestFile = getNewestFile(rnnDirectory+'cv');
+    console.log(newestFile);
+    sampleData();
+}
