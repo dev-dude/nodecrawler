@@ -8,7 +8,7 @@ var exec = require('child_process').exec;
 var fs = require('fs');
 var wstream = fs.createWriteStream("input.txt");
 var self = this;
-google.resultsPerPage = 1;
+google.resultsPerPage = 5;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
@@ -23,7 +23,7 @@ fs.truncate('input.txt', 0, function(){console.log('Cleared input.txt')});
 // empty training directory
 fsExtra.emptyDir('/home/ubuntu/char-rnn/cv', function (err) {
   if (!err) console.log('Successfully Emptied Cv directory!')
-})
+});
 
 var checkNumbersInString = function(string) {
     var length = string.replace(/[^0-9]/g, "").length;
@@ -54,7 +54,7 @@ var getNewestFile = function(dir) {
             })(dir + file);
         }
     });
- }
+ };
 
 var ruleSet = function(key,pS) {
     var text = $(pS[key]).text();
