@@ -110,6 +110,18 @@ var resultFormatter = function(string) {
     return newString;
 };
 
+var sampleData = function() {
+  child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' &',
+      function (error, stdout, stderr) {
+      //console.log(error);
+      //console.log(stdout);
+      //console.log(stderr);
+      var finalOutput = fs.createWriteStream(crawlerDirectory+'output.txt');
+      finalOutput.write(stdout);
+      console.log('Finished Sampling saved to output.txt');
+  });         
+};
+
 var launchTrainer = function() {
     console.log('Starting directory: ' + process.cwd());
     try {
@@ -117,27 +129,17 @@ var launchTrainer = function() {
         console.log('Switch to New directory: ' + process.cwd());
 
         console.log ('Starting RNN');
-        child = exec('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 &',
-            function (error, stdout, stderr) {
-                console.log('Finished');
-                console.log('Start sampling');
-                console.log(error);
-                console.log(stdout);
-                console.log(stderr);
-                newestFile = getNewestFile(rnnDirectory+'cv');
-                console.log(newestFile);
-                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' &',
-                    function (error, stdout, stderr) {
-                    //console.log(error);
-                    //console.log(stdout);
-                    //console.log(stderr);
-                    var finalOutput = fs.createWriteStream(crawlerDirectory+'output.txt');
-                    finalOutput.write(stdout);
-                    console.log('Finished Sampling saved to output.txt');
-                });           
-            });
-        child.stdout.pipe(process.stdout);
-        child.stderr.pipe(process.stderr);
+
+        child = exec('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 &');
+        child.stdout.on('data', function (chunk) {
+          console.log(chunk);
+        });
+        child.stdout.on('end', function () {
+            callback(list.join());
+            newestFile = getNewestFile(rnnDirectory+'cv');
+            console.log(newestFile);
+            sampleData();
+        });
     }
     catch (err) {
         console.log('chdir: ' + err);
