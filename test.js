@@ -5,6 +5,7 @@ var Crawler = require("crawler"),
     process = require('process'),
     fsExtra = require('fs-extra'),
     stats = require('stats'),
+    _ = require('underscore'),
     exec = require('child_process').execSync,
     fs = require('fs'),
     wstream = fs.createWriteStream("input.txt"),
@@ -40,31 +41,17 @@ var checkNumbersInString = function(string) {
     return (length < 30);
 };
 
-var getNewestFile = function(dir) {
+function getNewestFile(dir) {
     var files = fs.readdirSync(dir);
-    if (files.length === 1) {
-        return files[0];
-    }
-    var newest = { file: files[0] };
-    var checked = 0;
-    fs.stat(dir + newest.file, function(err, stats) {
-        newest.mtime = stats.mtime;
-        for (var i = 0; i < files.length; i++) {
-            var file = files[i];
-            (function(file) {
-                fs.stat(file, function(err, stats) {
-                    ++checked;
-                    if (stats.mtime.getTime() > newest.mtime.getTime()) {
-                        newest = { file : file, mtime : stats.mtime };
-                    }
-                    if (checked == files.length) {
-                        return newest;
-                    }
-                });
-            })(dir + file);
-        }
+    // use underscore for max()
+    return _.max(files, function (f) {
+        var fullpath = path.join(dir, f);
+
+        // ctime = creation time is used
+        // replace with mtime for modification time
+        return fs.statSync(fullpath).ctime;
     });
- };
+}
 
 var ruleSet = function(key,pS) {
     var text = $(pS[key]).text();
