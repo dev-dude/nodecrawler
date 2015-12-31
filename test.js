@@ -117,7 +117,7 @@ var launchTrainer = function() {
                 console.log('Start sampling');
                 newestFile = getNewestFile('/home/ubuntu/char-rnn/cv');
                 console.log(newestFile);
-                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 &',
+                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature .5 &',
                     function (error, stdout, stderr) {
                     //console.log(error);
                     //console.log(stdout);
