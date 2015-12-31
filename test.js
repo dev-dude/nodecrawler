@@ -30,6 +30,32 @@ var checkNumbersInString = function(string) {
     return (length < 30);
 };
 
+var getNewestFile = function(dir) {
+    var files = fs.readdirSync(dir);
+    if (files.length === 1) {
+        return files[0];
+    }
+    var newest = { file: files[0] };
+    var checked = 0;
+    fs.stat(dir + newest.file, function(err, stats) {
+        newest.mtime = stats.mtime;
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            (function(file) {
+                fs.stat(file, function(err, stats) {
+                    ++checked;
+                    if (stats.mtime.getTime() > newest.mtime.getTime()) {
+                        newest = { file : file, mtime : stats.mtime };
+                    }
+                    if (checked == files.length) {
+                        return newest;
+                    }
+                });
+            })(dir + file);
+        }
+    });
+ }
+
 var ruleSet = function(key,pS) {
     var text = $(pS[key]).text();
     var lowerCaseText = text.toLowerCase();
@@ -83,10 +109,15 @@ var launchTrainer = function() {
         console.log('Switch to New directory: ' + process.cwd());
 
         console.log ('Starting RNN');
-        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 2 -dropout 0.5 -gpuid -0 &',
+        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 512 -num_layers 2 -dropout 0.5 -gpuid -0 &',
             function (error, stdout, stderr) {
                 console.log('Finished');
                 console.log('Start sampling');
+                newestFile = getNewestFile('/home/ubuntu/char-rnn/cv')
+                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 &',
+                    function (error, stdout, stderr) {
+                    console.log('Finished Sampling');
+                });           
             });
         child.stdout.pipe(process.stdout);
         child.stderr.pipe(process.stderr);
@@ -110,7 +141,7 @@ var c = new Crawler({
         // $ is Cheerio by default
         //a lean implementation of core jQuery designed specifically for the server
         if (result && $) {
-	    console.log('success');
+	      console.log('success');
             var pS = $('body').find('p'),
                 prevPs = '';
             pS.each(function(key,callback) {
