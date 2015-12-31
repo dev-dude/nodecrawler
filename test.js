@@ -118,6 +118,9 @@ var launchTrainer = function() {
                 console.log(newestFile);
                 child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 &',
                     function (error, stdout, stderr) {
+                    console.log(error);
+                    console.log(stdout);
+                    console.log(stderr);
                     console.log('Finished Sampling');
                 });           
             });
