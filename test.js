@@ -9,8 +9,8 @@ var exec = require('child_process').exec;
 var fs = require('fs');
 var wstream = fs.createWriteStream("input.txt");
 var self = this;
-google.resultsPerPage = 5;
-var googlePages = 5;
+google.resultsPerPage = 10;
+var googlePages = 15;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
@@ -111,7 +111,7 @@ var launchTrainer = function() {
         console.log('Switch to New directory: ' + process.cwd());
 
         console.log ('Starting RNN');
-        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 512 -num_layers 2 -dropout 0.5 -gpuid -0 &',
+        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 3 -dropout 0.5 -gpuid -0 &',
             function (error, stdout, stderr) {
                 console.log('Finished');
                 console.log('Start sampling');
