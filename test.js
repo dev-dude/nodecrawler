@@ -4,6 +4,7 @@ var cheerio = require('cheerio');
 var google = require("./google.js");
 var process = require('process');
 var fsExtra = require('fs-extra');
+var stats = require('stats');
 var exec = require('child_process').exec;
 var fs = require('fs');
 var wstream = fs.createWriteStream("input.txt");
