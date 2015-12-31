@@ -10,6 +10,7 @@ var fs = require('fs');
 var wstream = fs.createWriteStream("input.txt");
 var self = this;
 google.resultsPerPage = 5;
+var googlePages = 5;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
@@ -118,10 +119,12 @@ var launchTrainer = function() {
                 console.log(newestFile);
                 child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 &',
                     function (error, stdout, stderr) {
-                    console.log(error);
-                    console.log(stdout);
-                    console.log(stderr);
-                    console.log('Finished Sampling');
+                    //console.log(error);
+                    //console.log(stdout);
+                    //console.log(stderr);
+                    var finalOutput = fs.createWriteStream("output.txt");
+                    finalOutput.write(stdout);
+                    console.log('Finished Sampling saved to output.txt');
                 });           
             });
         child.stdout.pipe(process.stdout);
@@ -184,7 +187,7 @@ google(keyWord, function (err, next, links){
       }
   }
 
-  if (nextCounter < 4) {
+  if (nextCounter < googlePages) {
     nextCounter += 1;
     if (next) {
         next()
