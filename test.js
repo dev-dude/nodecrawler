@@ -1,3 +1,4 @@
+
 var Crawler = require("crawler"),
     url = require('url'),
     cheerio = require('cheerio'),
@@ -22,6 +23,7 @@ var googlePages = 15,
     rnnSize = 1024,
     layers = 2,
     temperature = 0.5;
+    length = 10000;
 google.resultsPerPage = 10;
 
 // reset the file
@@ -120,7 +122,7 @@ var launchTrainer = function() {
                 console.log('Start sampling');
                 newestFile = getNewestFile('/home/ubuntu/char-rnn/cv');
                 console.log(newestFile);
-                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' &',
+                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' &',
                     function (error, stdout, stderr) {
                     //console.log(error);
                     //console.log(stdout);
