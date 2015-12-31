@@ -8,7 +8,7 @@ var exec = require('child_process').exec;
 var fs = require('fs');
 var wstream = fs.createWriteStream("input.txt");
 var self = this;
-google.resultsPerPage = 5;
+google.resultsPerPage = 1;
 var nextCounter = 0;
 $ = cheerio.load('');
 var keyWord = '';
@@ -113,7 +113,8 @@ var launchTrainer = function() {
             function (error, stdout, stderr) {
                 console.log('Finished');
                 console.log('Start sampling');
-                newestFile = getNewestFile('/home/ubuntu/char-rnn/cv')
+                newestFile = getNewestFile('/home/ubuntu/char-rnn/cv');
+                console.log(newestFile);
                 child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 &',
                     function (error, stdout, stderr) {
                     console.log('Finished Sampling');
