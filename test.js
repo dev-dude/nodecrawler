@@ -1,4 +1,3 @@
-
 var Crawler = require("crawler"),
     url = require('url'),
     cheerio = require('cheerio'),
@@ -22,8 +21,10 @@ $ = cheerio.load('');
 var googlePages = 15,
     rnnSize = 1024,
     layers = 2,
-    temperature = 0.5;
-    length = 10000;
+    temperature = 0.5,
+    length = 10000,
+    crawlerDirectory = '/home/ubuntu/server/nodecrawler/',
+    rnnDirectory = '/home/ubuntu/char-rnn/';
 google.resultsPerPage = 10;
 
 // reset the file
@@ -112,22 +113,22 @@ var resultFormatter = function(string) {
 var launchTrainer = function() {
     console.log('Starting directory: ' + process.cwd());
     try {
-        process.chdir('/home/ubuntu/char-rnn/');
+        process.chdir(rnnDirectory);
         console.log('Switch to New directory: ' + process.cwd());
 
         console.log ('Starting RNN');
-        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 &',
+        child = exec('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 &',
             function (error, stdout, stderr) {
                 console.log('Finished');
                 console.log('Start sampling');
-                newestFile = getNewestFile('/home/ubuntu/char-rnn/cv');
+                newestFile = getNewestFile(rnnDirectory+'/cv');
                 console.log(newestFile);
                 child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' &',
                     function (error, stdout, stderr) {
                     //console.log(error);
                     //console.log(stdout);
                     //console.log(stderr);
-                    var finalOutput = fs.createWriteStream("output.txt");
+                    var finalOutput = fs.createWriteStream(crawlerDirectory+'output.txt');
                     finalOutput.write(stdout);
                     console.log('Finished Sampling saved to output.txt');
                 });           
