@@ -18,14 +18,14 @@ var Crawler = require("crawler"),
 $ = cheerio.load('');
 
 // ****** CONFIG ******
-var googlePages = 12,
+var googlePages = 4,
     rnnSize = 1024,
     layers = 2,
     temperature = 0.5,
     length = 10000,
     crawlerDirectory = '/home/ubuntu/server/nodecrawler/',
     rnnDirectory = '/home/ubuntu/char-rnn/';
-google.resultsPerPage = 10;
+google.resultsPerPage = 5;
 
 // reset the file
 fs.truncate('input.txt', 0, function(){console.log('Cleared input.txt')});
