@@ -30,7 +30,8 @@ var googlePages = 1,
     test = false;
 google.resultsPerPage = 5;
 
-test = process.argv[3].toLowerCase() || false;
+// Test is third arguement
+test = (process.argv[3]) ? true : false;
 
 // If test don't rest the file and clear the directory
 if (!test) {
@@ -107,7 +108,7 @@ var resultFormatter = function(string) {
 };
 
 var sampleData = function() {
-  child = exec('th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length,
+  child = exec('th sample.lua '+rnnDirectory+'cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length,
       function (error, stdout, stderr) {
       //console.log(error);
       //console.log(stdout);
