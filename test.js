@@ -1,23 +1,28 @@
-var Crawler = require("crawler");
-var url = require('url');
-var cheerio = require('cheerio');
-var google = require("./google.js");
-var process = require('process');
-var fsExtra = require('fs-extra');
-var stats = require('stats');
-var exec = require('child_process').exec;
-var fs = require('fs');
-var wstream = fs.createWriteStream("input.txt");
-var self = this;
-google.resultsPerPage = 10;
-var googlePages = 15;
-var nextCounter = 0;
+var Crawler = require("crawler"),
+    url = require('url'),
+    cheerio = require('cheerio'),
+    google = require("./google.js"),
+    process = require('process'),
+    fsExtra = require('fs-extra'),
+    stats = require('stats'),
+    exec = require('child_process').exec,
+    fs = require('fs'),
+    wstream = fs.createWriteStream("input.txt"),
+    self = this,
+    keyWord = '',
+    newestFile = '',
+    queueCount = 0,
+    urlList = [],
+    child,
+    nextCounter = 0;
 $ = cheerio.load('');
-var keyWord = '';
-var queueCount = 0;
-var urlList = [];
-var exec = require('child_process').exec,
-    child;
+
+// ****** CONFIG ******
+var googlePages = 15,
+    rnnSize = 1024,
+    layers = 2,
+    temperature = 0.5;
+google.resultsPerPage = 10;
 
 // reset the file
 fs.truncate('input.txt', 0, function(){console.log('Cleared input.txt')});
@@ -93,7 +98,6 @@ var resultFormatter = function(string) {
     });
 
     // remove special characters
-    // newString = newString.replace(/[^\w\s]/gi, '');
     newString = newString.replace(/[^A-Za-z0-9;.,'?() ]/g, '');
 
     if (newString.length > 200) {
@@ -104,20 +108,19 @@ var resultFormatter = function(string) {
 };
 
 var launchTrainer = function() {
-    var child;
     console.log('Starting directory: ' + process.cwd());
     try {
         process.chdir('/home/ubuntu/char-rnn/');
         console.log('Switch to New directory: ' + process.cwd());
 
         console.log ('Starting RNN');
-        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size 1024 -num_layers 3 -dropout 0.5 -gpuid -0 &',
+        child = exec('nohup th train.lua -data_dir /home/ubuntu/server/nodecrawler/  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 &',
             function (error, stdout, stderr) {
                 console.log('Finished');
                 console.log('Start sampling');
                 newestFile = getNewestFile('/home/ubuntu/char-rnn/cv');
                 console.log(newestFile);
-                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature .5 &',
+                child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' &',
                     function (error, stdout, stderr) {
                     //console.log(error);
                     //console.log(stdout);
@@ -145,11 +148,11 @@ var c = new Crawler({
     callback : function (error, result, $) {
         //console.log(result.options.uri);
         //console.log(error);
-        console.log("here");
+        console.log("Crawling:");
         // $ is Cheerio by default
         //a lean implementation of core jQuery designed specifically for the server
         if (result && $) {
-	      console.log('success');
+	      console.log(result.options.uri + " SUCCESS");
             var pS = $('body').find('p'),
                 prevPs = '';
             pS.each(function(key,callback) {
@@ -169,12 +172,6 @@ var c = new Crawler({
         launchTrainer();
     }
 });
-
-// Queue just one URL, with default callback
-//c.queue('http://www.pcmag.com/article2/0,2817,2388652,00.asp');
-//c.queue('http://www.tomsguide.com/us/best-antivirus,review-2588-5.html');
-//c.queue('http://www.amazon.com/Avast-Free-Antivirus-2015-Download/product-reviews/B00H9A60O4');
-//c.queue('http://www.alphr.com/security/6745/best-free-antivirus-of-2015-the-best-free-internet-security-software');
 
 keyWord = process.argv[2].toLowerCase();
 google(keyWord, function (err, next, links){
