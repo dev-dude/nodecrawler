@@ -130,7 +130,7 @@ var launchTrainer = function() {
 
         console.log ('Starting RNN');
 
-        child = exec('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 &');
+        child = exec('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 2>&1 1>output && echo done! > done');
 
         // Block the event loop until the command has executed.
         child.stdout.on('data', function (chunk) {
