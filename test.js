@@ -131,15 +131,18 @@ var launchTrainer = function() {
         console.log ('Starting RNN');
 
         child = exec('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 &');
+
+        // Block the event loop until the command has executed.
         child.stdout.on('data', function (chunk) {
-          console.log(chunk);
+            console.log(chunk);
         });
-        child.stdout.on('end', function () {
-            callback(list.join());
-            newestFile = getNewestFile(rnnDirectory+'cv');
-            console.log(newestFile);
-            sampleData();
-        });
+        while (!fs.existsSync('done')) {
+            // Do nothing
+        }
+        newestFile = getNewestFile(rnnDirectory+'cv');
+        console.log(newestFile);
+        sampleData();
+
     }
     catch (err) {
         console.log('chdir: ' + err);
