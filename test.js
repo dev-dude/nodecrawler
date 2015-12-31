@@ -18,7 +18,7 @@ var Crawler = require("crawler"),
 $ = cheerio.load('');
 
 // ****** CONFIG ******
-var googlePages = 15,
+var googlePages = 12,
     rnnSize = 1024,
     layers = 2,
     temperature = 0.5,
@@ -121,7 +121,7 @@ var launchTrainer = function() {
             function (error, stdout, stderr) {
                 console.log('Finished');
                 console.log('Start sampling');
-                newestFile = getNewestFile(rnnDirectory+'/cv');
+                newestFile = getNewestFile(rnnDirectory+'cv');
                 console.log(newestFile);
                 child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' &',
                     function (error, stdout, stderr) {

@@ -8,9 +8,9 @@ var descSel = 'div.s'
 var itemSel = 'li.g'
 var nextSel = 'td.b a span'
 
-var URL = 'http://www.google.%s/search?hl=%s&q=%s&start=%s&sa=N&num=%s&ie=UTF-8&oe=UTF-8'
+var URL = 'http://www.google.%s/search?hl=%s&q=%s&start=%s&sa=N&num=%s&ie=UTF-8&oe=UTF-8&filter=0';
 
-var nextTextErrorMsg = 'Translate `google.nextText` option to selected language to detect next results link.'
+var nextTextErrorMsg = 'Translate `google.nextText` option to selected language to detect next results link.';
 
 // start parameter is optional
 function google (query, start, callback) {
