@@ -5,7 +5,7 @@ var Crawler = require("crawler"),
     process = require('process'),
     fsExtra = require('fs-extra'),
     stats = require('stats'),
-    exec = require('child_process').exec,
+    exec = require('child_process'),
     fs = require('fs'),
     wstream = fs.createWriteStream("input.txt"),
     self = this,
@@ -111,7 +111,7 @@ var resultFormatter = function(string) {
 };
 
 var sampleData = function() {
-  child = exec('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' &',
+  child = exec.execSync('nohup th sample.lua cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' &',
       function (error, stdout, stderr) {
       //console.log(error);
       //console.log(stdout);
@@ -130,18 +130,21 @@ var launchTrainer = function() {
 
         console.log ('Starting RNN');
 
-        child = exec('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 2>&1 1>output && echo done! > done');
+        child = exec.execSync('nohup th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0');
 
-        // Block the event loop until the command has executed.
         child.stdout.on('data', function (chunk) {
             console.log(chunk);
         });
-        while (!fs.existsSync('done')) {
-            // Do nothing
-        }
-        newestFile = getNewestFile(rnnDirectory+'cv');
-        console.log(newestFile);
-        sampleData();
+
+        child.stdout.on('close', function (chunk) {
+            newestFile = getNewestFile(rnnDirectory+'cv');
+            console.log(newestFile);
+            sampleData();
+        });
+
+
+
+
 
     }
     catch (err) {
