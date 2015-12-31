@@ -108,15 +108,8 @@ var resultFormatter = function(string) {
 };
 
 var sampleData = function() {
-  child = exec('th sample.lua '+rnnDirectory+'cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length,
-      function (error, stdout, stderr) {
-      //console.log(error);
-      //console.log(stdout);
-      //console.log(stderr);
-      var finalOutput = fs.createWriteStream(crawlerDirectory+'output.txt');
-      finalOutput.write(stdout);
-      console.log('Finished Sampling saved to output.txt');
-  });         
+  child = exec('th sample.lua '+rnnDirectory+'cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' | tee ./sample-output.txt');
+  console.log('Finished Sampling saved to sample-output.txt');
 };
 
 var launchTrainer = function() {
@@ -127,7 +120,7 @@ var launchTrainer = function() {
 
         console.log ('Starting RNN');
 
-        child = exec('th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 | tee ./output.txt');
+        child = exec('th train.lua -data_dir '+crawlerDirectory+'  -rnn_size '+rnnSize+' -num_layers '+layers+' -dropout 0.5 -gpuid -0 | tee ./rnn-output.txt');
         newestFile = getNewestFile(rnnDirectory+'cv');
         console.log(newestFile);
         sampleData();
