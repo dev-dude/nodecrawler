@@ -4,6 +4,7 @@ var Crawler = require("crawler"),
     google = require("./google.js"),
     process = require('process'),
     fsExtra = require('fs-extra'),
+    path = requre('path'),
     stats = require('stats'),
     _ = require('underscore'),
     exec = require('child_process').execSync,
@@ -20,8 +21,8 @@ $ = cheerio.load('');
 
 // ****** CONFIG ******
 var googlePages = 1,
-    rnnSize = 1024,
-    layers = 2,
+    rnnSize = 128,
+    layers = 1,
     temperature = 0.5,
     length = 10000,
     crawlerDirectory = '/home/ubuntu/server/nodecrawler/',
