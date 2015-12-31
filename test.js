@@ -18,7 +18,7 @@ var Crawler = require("crawler"),
 $ = cheerio.load('');
 
 // ****** CONFIG ******
-var googlePages = 4,
+var googlePages = 1,
     rnnSize = 1024,
     layers = 2,
     temperature = 0.5,
