@@ -14,10 +14,14 @@ var buildSiteCore = function() {
         process.chdir(wwwDirectory);
         console.log('Switch to New directory: ' + process.cwd());
         child = exec(hexoLocation + 'hexo init ' + keyword + ' | tee '+logDirectory+'/website-output.txt');
+
         process.chdir(wwwDirectory + keyword);
         child = exec('npm install | tee ' + logDirectory + '/website-output.txt');
-        child = exec(hexoLocation + 'hexo new [layout] ' + keyword + ' | tee ' + logDirectory + '/website-output.txt');
-        child = exec(hexoLocation + 'hexo publish [layout]' +sampleOutPutFile+ ' | tee ' + logDirectory + '/website-output.txt');
+        child = exec(hexoLocation + 'hexo new Page ' + keyword + ' | tee ' + logDirectory + '/website-output.txt');
+        mvCommand = 'mv /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/'+ _pages +'/'+ keyword+'.md';
+        console.log(mvCommand);
+        child = exec(mvCommand);
+        console.log('start server');
         child = regularExec(hexoLocation + 'hexo server');
     }
     catch (err) {
