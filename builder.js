@@ -6,24 +6,37 @@ var wwwDirectory = '/home/ubuntu/server/www/',
     fs = require('fs'),
     child,
     sampleOutPutFile = '/home/ubuntu/char-rnn/sample-output.txt',
-    hexoLocation = '/usr/local/lib/node_modules/hexo-cli/bin/',
-    keyword = 'free antivirus'.replace(/ /g, '-');
+    hexoLocation = '/usr/local/lib/node_modules/hexo-cli/bin/';
 
-var builder = function() {
+var builder = function(keyword) {
+    keyword = keyword.replace(/ /g, '-');
     try {
+        var mvCommand,
+            newPageCommand,
+            serverCommand,
+            loadContentCommand,
+            initHexoCommand;
+
         process.chdir(wwwDirectory);
         console.log('Switch to New directory: ' + process.cwd());
-        child = exec(hexoLocation + 'hexo init ' + keyword + ' | tee '+logDirectory+'/website-output.txt');
-
+        initHexoCommand = hexoLocation + 'hexo init ' + keyword + ' | tee '+logDirectory+'/website-output.txt';
+        console.log(initHexoCommand);
+        child = exec(initHexoCommand);
         process.chdir(wwwDirectory + keyword);
-        child = exec('npm install | tee ' + logDirectory + '/website-output.txt');
-        child = exec(hexoLocation + 'hexo new Page ' + keyword + ' | tee ' + logDirectory + '/website-output.txt');
+        loadContentCommand = 'npm install | tee ' + logDirectory + '/website-output.txt';
+        console.log(loadContentCommand);
+        child = exec(loadContentCommand);
+        newPageCommand = hexoLocation + 'hexo new page ' + keyword + ' | tee ' + logDirectory + '/website-output.txt';
+        console.log(newPageCommand);
+        child = exec(newPageCommand);
         // 2nd keyword is page name
         mvCommand = 'cp /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/source/'+ keyword+'/index.md';
         console.log(mvCommand);
         child = exec(mvCommand);
         console.log('start server');
-        child = regularExec(hexoLocation + 'hexo server');
+        serverCommand = hexoLocation + 'hexo server';
+        console.log(serverCommand);
+        child = regularExec(serverCommand);
     }
     catch (err) {
         console.log('chdir: ' + err);
