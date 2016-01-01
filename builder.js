@@ -1,5 +1,5 @@
-var wwwDirectory = '/ubuntu/home/server/www/',
-    logDirectory = '/ubuntu/home/logs',
+var wwwDirectory = '/home/ubuntu/server/www/',
+    logDirectory = '/home/ubuntu/logs',
     process = require('process'),
     exec = require('child_process').execSync,
     regularExec = require('child_process').exec,
