@@ -13,21 +13,12 @@ var buildSiteCore = function() {
     try {
         process.chdir(wwwDirectory);
         console.log('Switch to New directory: ' + process.cwd());
-        if (!fs.existsSync(wwwDirectory + keyword)){
-            fs.mkdirSync(dir);
-            child = exec(hexoLocation + 'hexo init ' + keyword + ' | tee '+logDirectory+'/website-output.txt');
-
-            try {
-                process.chdir(wwwDirectory + keyword);
-                child = exec('npm install | tee ' + logDirectory + '/website-output.txt');
-                child = exec(hexoLocation + 'hexo new [layout] ' + keyword + ' | tee ' + logDirectory + '/website-output.txt');
-                child = exec(hexoLocation + 'hexo publish [layout]' +sampleOutPutFile+ ' | tee ' + logDirectory + '/website-output.txt');
-                child = regularExec(hexoLocation + 'hexo server');
-            }
-            catch (err) {
-                console.log('chdir: ' + err);
-            }
-        }
+        child = exec(hexoLocation + 'hexo init ' + keyword + ' | tee '+logDirectory+'/website-output.txt');
+        process.chdir(wwwDirectory + keyword);
+        child = exec('npm install | tee ' + logDirectory + '/website-output.txt');
+        child = exec(hexoLocation + 'hexo new [layout] ' + keyword + ' | tee ' + logDirectory + '/website-output.txt');
+        child = exec(hexoLocation + 'hexo publish [layout]' +sampleOutPutFile+ ' | tee ' + logDirectory + '/website-output.txt');
+        child = regularExec(hexoLocation + 'hexo server');
     }
     catch (err) {
         console.log('chdir: ' + err);
