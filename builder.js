@@ -6,7 +6,8 @@ var wwwDirectory = '/home/ubuntu/server/www/',
     fs = require('fs'),
     child,
     sampleOutPutFile = '/home/ubuntu/char-rnn/sample-output.txt',
-    hexoLocation = '/usr/local/lib/node_modules/hexo-cli/bin/';
+    hexoLocation = '/usr/local/lib/node_modules/hexo-cli/bin/',
+    test = (process.argv[3]) ? true : false;
 
 var builder = function(keyword) {
     keyword = keyword.replace(/ /g, '-');
@@ -26,7 +27,7 @@ var builder = function(keyword) {
         loadContentCommand = 'npm install | tee ' + logDirectory + '/website-output.txt';
         console.log(loadContentCommand);
         child = exec(loadContentCommand);
-        newPageCommand = hexoLocation + 'hexo new page ' + keyword + ' | tee ' + logDirectory + '/website-output.txt';
+        newPageCommand = hexoLocation + 'hexo new post ' + keyword + ' | tee ' + logDirectory + '/website-output.txt';
         console.log(newPageCommand);
         child = exec(newPageCommand);
         // 2nd keyword is page name
@@ -43,4 +44,9 @@ var builder = function(keyword) {
     }
 };
 
-module.exports = builder;
+if (test) {
+    builder();
+} else {
+    module.exports = builder;
+}
+
