@@ -9,7 +9,7 @@ var wwwDirectory = '/home/ubuntu/server/www/',
     hexoLocation = '/usr/local/lib/node_modules/hexo-cli/bin/',
     keyword = 'free antivirus'.replace(/ /g, '-');
 
-var buildSiteCore = function() {
+var builder = function() {
     try {
         process.chdir(wwwDirectory);
         console.log('Switch to New directory: ' + process.cwd());
@@ -19,7 +19,7 @@ var buildSiteCore = function() {
         child = exec('npm install | tee ' + logDirectory + '/website-output.txt');
         child = exec(hexoLocation + 'hexo new Page ' + keyword + ' | tee ' + logDirectory + '/website-output.txt');
         // 2nd keyword is page name
-        mvCommand = 'mv /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/source/'+ keyword+'/index.md';
+        mvCommand = 'cp /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/source/'+ keyword+'/index.md';
         console.log(mvCommand);
         child = exec(mvCommand);
         console.log('start server');
@@ -30,4 +30,4 @@ var buildSiteCore = function() {
     }
 };
 
-buildSiteCore();
+module.exports = builder;

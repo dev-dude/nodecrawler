@@ -2,6 +2,7 @@ var Crawler = require("crawler"),
     url = require('url'),
     cheerio = require('cheerio'),
     google = require("./google.js"),
+    builder = require("./builder.js"),
     process = require('process'),
     fsExtra = require('fs-extra'),
     path = require('path'),
@@ -110,6 +111,8 @@ var resultFormatter = function(string) {
 var sampleData = function() {
   child = exec('th sample.lua '+rnnDirectory+'cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' | tee ./sample-output.txt');
   console.log('Finished Sampling saved to sample-output.txt');
+  console.log('Builllding...');
+  builder();
 };
 
 var launchTrainer = function() {
