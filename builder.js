@@ -18,7 +18,8 @@ var buildSiteCore = function() {
         process.chdir(wwwDirectory + keyword);
         child = exec('npm install | tee ' + logDirectory + '/website-output.txt');
         child = exec(hexoLocation + 'hexo new Page ' + keyword + ' | tee ' + logDirectory + '/website-output.txt');
-        mvCommand = 'mv /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/_pages/'+ keyword+'.md';
+        // 2nd keyword is page name
+        mvCommand = 'mv /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/source/'+ keyword+'/index.md';
         console.log(mvCommand);
         child = exec(mvCommand);
         console.log('start server');
