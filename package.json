@@ -13,6 +13,6 @@
       "pos": "*",
       "pos-chunker":"*",
       "node-tokenizer":"*",
-      "google-image-search": "*"
+      "q": "*"
   }
 }

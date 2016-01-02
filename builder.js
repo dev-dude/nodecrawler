@@ -4,9 +4,15 @@ var wwwDirectory = '/home/ubuntu/server/www/',
     exec = require('child_process').execSync,
     regularExec = require('child_process').exec,
     fs = require('fs'),
+    request = require('request'),
+    http = require('http'),
     child,
     sampleOutPutFile = '/home/ubuntu/char-rnn/sample-output.txt',
     hexoLocation = '/usr/local/lib/node_modules/hexo-cli/bin/',
+    cheerio = require('cheerio'),
+    $ = cheerio.load(''),
+    q = require('q'),
+    lastRandom = 0,
     /*
     pos = require('pos'),
     chunker = require('pos-chunker'),
@@ -15,56 +21,85 @@ var wwwDirectory = '/home/ubuntu/server/www/',
     dataFile,
     test = (process.argv[3]) ? true : false;
 
+var getImages = function(keyword,path) {
+    var defer = q.defer();
+    var url = 'http://www.bing.com/images/search?q='+encodeURIComponent(keyword)+'&go=Submit&qs=ds&form=QBILPG';
+    request.get({
+    url: url
+    }, function(err, resp, html){
+        var randomNumber,
+            link,
+            file,
+            request;
+        $ = cheerio.load(html),
+        imagesLength = $('.thumb').length;
+        randomNumber = Math.floor(Math.random()*imagesLength);
+        link = $($('.thumb')[randomNumber]).attr('href');
+        file = fs.createWriteStream(keyword + '-' + randomNumber + '.jpg');
+        request = http.get(link, function(response) {
+          response.pipe(file);
+          console.log('herefirst');
+          return defer.resolve();
+        });
+    });
+    return defer.promise;
+};
+
 var builder = function(keyword) {
-    keyword = keyword.replace(/ /g, '-');
-    try {
-      var mvCommand,
-         newPageCommand,
-         serverCommand,
-         loadContentCommand,
-         initHexoCommand,
-         removeHelloWorld;
+    keyword = keyword.replace(/ /g, '-') || 'freantivirus';
+    getImages(keyword).then(function(){
+      console.log('here');
+        try {
+          var mvCommand,
+             newPageCommand,
+             serverCommand,
+             loadContentCommand,
+             initHexoCommand,
+             removeHelloWorld;
 
-       process.chdir(wwwDirectory);
-       console.log('Switch to New directory: ' + process.cwd());
-       initHexoCommand = hexoLocation + 'hexo init ' + keyword + ' | tee '+logDirectory+'/website-output.txt';
-       console.log(initHexoCommand);
-       child = exec(initHexoCommand);
-       process.chdir(wwwDirectory + keyword);
+           process.chdir(wwwDirectory);
+           console.log('Switch to New directory: ' + process.cwd());
+           initHexoCommand = hexoLocation + 'hexo init ' + keyword + ' | tee '+logDirectory+'/website-output.txt';
+           console.log(initHexoCommand);
+           child = exec(initHexoCommand);
+           process.chdir(wwwDirectory + keyword);
 
-       // Install Node Packages
-       loadContentCommand = 'npm install | tee ' + logDirectory + '/website-output.txt';
-       console.log(loadContentCommand);
-       child = exec(loadContentCommand);
+           // Install Node Packages
+           loadContentCommand = 'npm install | tee ' + logDirectory + '/website-output.txt';
+           console.log(loadContentCommand);
+           child = exec(loadContentCommand);
 
-       // Create Post
-       newPageCommand = hexoLocation + 'hexo new post ' + keyword + ' | tee ' + logDirectory + '/website-output.txt';
-       console.log(newPageCommand);
-       child = exec(newPageCommand);
+           // Create Post
+           newPageCommand = hexoLocation + 'hexo new post ' + keyword + ' | tee ' + logDirectory + '/website-output.txt';
+           console.log(newPageCommand);
+           child = exec(newPageCommand);
 
-       // Remove Hello World
-       removeHelloWorld = 'rm' + wwwDirectory + keyword+'/source/_posts/hello-world.md';
-       console.log(removeHelloWorld);
-       child = exec(removeHelloWorld);
+           // Remove Hello World
+           ///server/www/free-antivirus/source/_posts
+           removeHelloWorld = 'rm ' + wwwDirectory + keyword+'/source/_posts/hello-world.md';
+           console.log(removeHelloWorld);
+           child = exec(removeHelloWorld);
 
-       // 2nd keyword is page name
-       mvCommand = 'cp /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/source/_posts/'+ keyword+'.md';
-       console.log(mvCommand);
-       child = exec(mvCommand);
+           // 2nd keyword is page name
+           mvCommand = 'cp /home/ubuntu/char-rnn/sample-output.txt '+wwwDirectory + keyword+'/source/_posts/'+ keyword+'.md';
+           console.log(mvCommand);
+           child = exec(mvCommand);
 
-       // Start Server
-       console.log('start server');
-       serverCommand = hexoLocation + 'hexo server';
-       console.log(serverCommand);
-       child = regularExec(serverCommand);
-    }
-    catch (err) {
-        console.log('chdir: ' + err);
-    }
+           // Start Server
+           console.log('start server');
+           serverCommand = hexoLocation + 'hexo server';
+           console.log(serverCommand);
+           child = regularExec(serverCommand);
+        }
+        catch (err) {
+            console.log('chdir: ' + err);
+        }
+    });
 };
 
 //getProperNouns();
-module.exports = builder;
+//module.exports = builder;
+builder('free antivirus');
 
 /*
 var getProperNouns = function() {
