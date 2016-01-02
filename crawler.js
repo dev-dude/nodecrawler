@@ -21,8 +21,8 @@ var Crawler = require("crawler"),
 $ = cheerio.load('');
 
 // ****** CONFIG ******
-var googlePages = 1,
-    rnnSize = 128,
+var googlePages = 5,
+    rnnSize = 1024,
     layers = 1,
     temperature = 0.5,
     length = 10000,
@@ -89,10 +89,10 @@ var resultFormatter = function(string) {
     // strip html
     newString = newString.replace(/<(?:.|\n)*?>/gm, '');
 
-    // strip comments 
+    // strip comments
     newString = newString.replace(/<!--[\s\S]*?-->/g, '');
 
-    // remove urls 
+    // remove urls
     var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
     newString = newString.replace(urlRegex, function(url) {
         return '';

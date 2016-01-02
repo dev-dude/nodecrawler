@@ -9,6 +9,10 @@
       "process": "*",
       "fs-extra": "*",
       "stats": "*",
-      "underscore":"*"
+      "underscore":"*",
+      "pos": "*",
+      "pos-chunker":"*",
+      "node-tokenizer":"*",
+      "google-image-search": "*"
   }
 }
