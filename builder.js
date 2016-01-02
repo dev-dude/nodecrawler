@@ -7,19 +7,16 @@ var wwwDirectory = '/home/ubuntu/server/www/',
     child,
     sampleOutPutFile = '/home/ubuntu/char-rnn/sample-output.txt',
     hexoLocation = '/usr/local/lib/node_modules/hexo-cli/bin/',
-    keyword = 'free antivirus'.replace(/ /g, '-'),
     /*
     pos = require('pos'),
     chunker = require('pos-chunker'),
     tokenizer = require('node-tokenizer'),
     */
-    dataFile;
+    dataFile,
+    test = (process.argv[3]) ? true : false;
 
-
-
-
-
-var builder = function() {
+var builder = function(keyword) {
+    keyword = keyword.replace(/ /g, '-');
     try {
       var mvCommand,
          newPageCommand,

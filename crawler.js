@@ -112,7 +112,7 @@ var sampleData = function() {
   child = exec('th sample.lua '+rnnDirectory+'cv/'+newestFile+' -gpuid -0 -temperature '+temperature+' -length '+length+' | tee ./sample-output.txt');
   console.log('Finished Sampling saved to sample-output.txt');
   console.log('Builllding...');
-  builder();
+  builder(keyWord);
 };
 
 var launchTrainer = function() {
